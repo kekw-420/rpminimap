@@ -43,3 +43,13 @@ When the minimap is installed be sure to check the template categories in settin
 
 ### Pride Flags
 [![](https://github.com/plutorising/Minimap/blob/master/templates/prideFlags.png)](https://pixelcanvas.io/@1542,-40)
+
+
+
+## Category: Kukistan
+
+### Kuk
+[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/kuk.png)](https://pixelcanvas.io/@-2575,3212)
+
+### Friendship
+[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/friendship.png)](https://pixelcanvas.io/@759,454)
