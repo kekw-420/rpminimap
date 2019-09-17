@@ -32,17 +32,14 @@ When the minimap is installed be sure to check the template categories in settin
 
 ## Category: PixelTraa
 
-#### TraaMainBase
-[![](https://raw.githubusercontent.com/plutorising/Minimap/master/templates/mainBase.png)](https://pixelcanvas.io/@1450,959)
+#### Traa Main Base
+[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/traaMainBase.png)](https://pixelcanvas.io/@1450,959)
 
-#### northernAnnex
-[![](https://raw.githubusercontent.com/plutorising/Minimap/master/templates/northernAnnex.png)](https://pixelcanvas.io/@1435,766)
-
-#### eastEnd
-[![](https://raw.githubusercontent.com/plutorising/Minimap/master/templates/eastEnd.png)](https://pixelcanvas.io/@1973,987)
-
-#### outpost
+#### Outpost
 [![](https://github.com/plutorising/Minimap/blob/master/templates/outpost.png)](https://pixelcanvas.io/@139290,-22490)
 
-### prideFlags
+### Traa Center
+[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/traaCenter.png)](https://pixelcanvas.io/@-1000,-651)
+
+### Pride Flags
 [![](https://github.com/plutorising/Minimap/blob/master/templates/prideFlags.png)](https://pixelcanvas.io/@1542,-40)
