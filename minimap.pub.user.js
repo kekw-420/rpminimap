@@ -19,4 +19,845 @@
 // @downloadURL  https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/minimap.pub.user.js
 // ==/UserScript==
 
-var _0x55d8=[',\x20Cookie:\x20','!data.json','ajax','GET','json','parseJSON','stringify','sort','length','#config-categorie','<label><input\x20type=\x22checkbox\x22\x20name=\x22','inArray','\x20id=\x22check-','</label>','#CursorColor','change','val','#CookiesOk','click','#discord-link','open','https://discord.io/pixelatlas','_blank','#inputName','autocomplete','#enter-goto','hasOwnProperty','round','width','location','replace','which','http://pixelcanvas.io/@','#goto','slideUp','slideDown','#custom-slider-cursor','#slider-cursor','#slider-grid','#config-reset','confirm','Are\x20you\x20sure?','reload','Left','toggleClass','#app\x20>\x20div:nth-child(1)\x20>\x20div:nth-child(9)\x20>\x20div:nth-child(2)','vertical','#open-settings','#settings','.SettingsCss:visible','#close-settings',':visible','#close-goto','.GotoCss:visible','mouseover','minimize','#hide-map','false','#gameWindow','mousemove','innerText','css','background-color','BLUE','#0074D9','AQUA','#7FDBFF','TEAL','#39CCCC','OLIVE','#3D9970','GREEN','#2ECC40','LIME','#01FF70','YELLOW','#FFDC00','#FF851B','ORANGE','RED','#FF4136','#85144b','FUCHSIA','#F012BE','#B10DC9','PURPLE','BLACK','#111111','GRAY','#AAAAAA','SILVER','#DDDDDD','max','exec','clearRect','height','beginPath','strokeStyle','stroke','Drawing\x20grid\x20board\x20=\x20[',']\x20and\x20offset\x20=\x20[','fillStyle','rgba(34,\x2034,\x2034,\x20','translate','fillRect','Hitzone','removeClass','x:\x20','\x20|\x20z:\x20(','drawImage','.png','includes','push','#config-categorie\x20input:checked','each','attr','join','#minimap','some','Drawing','get','getContext','imageSmoothingEnabled','webkitImageSmoothingEnabled','mozImageSmoothingEnabled','#minimap-grid','getImageData','data','prototype','between','min','apply','https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/','head','append','<link\x20rel=\x27stylesheet\x27\x20href=\x27https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css\x27\x20type=\x27text/css\x27\x20media=\x27screen\x27>','<style>h2.title\x20{\x20margin:0px\x20auto;\x20padding:10px;\x20}\x0d\x0a.moveUp\x20{position:absolute;\x20bottom:6em;\x20left:0.3333em;}\x0d\x0a.groupUp\x20{\x20bottom:\x20initial\x20!important;\x20left:\x20initial\x20!important;\x20position:\x20initial\x20!important;\x20display:\x20inline-block\x20!important;}\x0d\x0a.colorsLeft\x20{margin-left:0.333em\x20!important;}\x0d\x0a.close\x20{\x20color:black;\x20position:absolute;\x20top:0.8em;\x20right:1em;\x20cursor:pointer;\x20}\x0d\x0a.discord\x20{\x20color:black;\x20position:absolute;\x20top:0.75em;\x20right:2.55em;\x20cursor:pointer;\x20}\x0d\x0a.smooth\x20{\x20overflow:auto;\x20padding-top:4px;\x20padding-bottom:4px;\x20}\x0d\x0a.settings-list\x20{\x20margin:2px;\x20text-shadow:1px\x201px\x208px\x20white;\x20position:relative;\x20list-style-type:none;\x20padding:0;\x20display:table;\x20width:99%;}\x0d\x0a.settings-list\x20li:nth-child(odd)\x20{\x20background:linear-gradient(to\x20right,\x20rgba(228,228,228,0.65),\x20rgba(0,0,0,0));\x20}\x0d\x0a.settings-button\x20{\x20right:0.5em;\x20}\x20.small{font-size:12px;}\x20.smalltext{font-size:10px;\x20width:120px;}\x0d\x0a.SettingsCss\x20{\x20width:280px;\x20height:400px;\x20display:none;\x20border:3px\x20solid\x20rgba(34,34,34,0.75);\x20overflow:hidden;\x20background-color:rgba(255,255,255,0.95);\x20position:absolute;\x20top:-10%;\x20bottom:0;\x20left:0;\x20right:0;\x20margin:auto;\x20}\x0d\x0a.GotoCss\x20{\x20width:280px;\x20height:110px;\x20display:none;\x20border:3px\x20solid\x20rgba(34,34,34,0.75);\x20overflow:hidden;\x20background-color:rgba(255,255,255,0.95);\x20position:absolute;\x20top:-20%;\x20bottom:0;\x20left:0;\x20right:0;\x20margin:auto;\x20}\x0d\x0a#minimap-backup\x20{background-color:rgba(0,0,0,0.75);\x20height:50px;\x20border-radius:5px;\x20position:absolute;\x20right:1em;\x20bottom:1em;}\x0d\x0a#minimap-content\x20{background-color:rgba(0,0,0,0.75);\x20width:480px;\x20height:270px;\x20border-radius:5px;\x20position:absolute;\x20right:1em;\x20bottom:1em;\x20outline:\x204px\x20solid\x20white;}\x0d\x0a.fleft\x20{float:left;}\x20.fright\x20{float:right;}\x0d\x0a.minimize\x20{\x20opacity:\x200.45;\x20filter:\x20alpha(opacity=45);\x20/*\x20For\x20IE8\x20and\x20earlier\x20*/\x20}\x0d\x0a#minimap-settings\x20{\x20z-index:6;\x20position:absolute;\x20right:0em;\x20bottom:0;\x20width:480px;\x20background-color:rgba(0,0,0,0.5);}\x0d\x0a#minimap\x20{width:100%;\x20top:0;\x20height:100%;\x20z-index:0;\x20outline:\x204px\x20solid\x20black!important;\x20outline-offset:\x20-2px;}\x20#minimap-grid\x20{width:100%;\x20top:0;\x20height:100%;\x20z-index:1;}\x20#minimap-cursor\x20{width:100%;\x20top:0;\x20height:100%;\x20z-index:2;}\x0d\x0a.clickable\x20{\x20cursor:pointer;\x20font-weight:bold;\x20}\x0d\x0aul.toolbar\x20{\x20justify-content:\x20space-around;\x20white-space:nowrap;\x20\x20display:-webkit-flex;\x20-webkit-justify-content:center;\x20display:flex;\x20justify-content:center;\x20z-index:6;\x20position:relative\x20!important;\x20line-height:25px;\x20list-style-type:none;\x20margin:0;\x20border-style:none;\x20overflow:hidden;\x20text-align:center;\x20color:white;\x20}\x0d\x0ali.toolbar\x20{\x20z-index:6;\x20float:left;\x20}\x20li.padding\x20{\x20padding-left:20px;\x20}\x20li.smallPadding\x20{\x20padding-left:4px;\x20}\x0d\x0a.ui-slider\x20.ui-slider-handle\x20{\x20width:1em\x20!important;\x20}\x0d\x0a.footer\x20{\x20font-size:8px;\x20position:absolute;\x20bottom:.5em;\x20text-align:center;\x20}\x0d\x0a.slider\x20{\x20right:0em\x20!important;\x20width:6.25em\x20!important;\x20}\x0d\x0a#config-categorie\x20{\x20height:50px;width:275px;border:1px\x20solid\x20#ccc;\x20overflow:auto;\x20font-size:\x2014px;\x20}\x0d\x0a#BoxedSettings\x20{\x20height:180px;width:275px;border:1px\x20solid\x20#ccc;\x20overflow:auto;\x20font-size:\x2014px;\x20}\x0d\x0a#i1,\x20#i2,\x20#i3\x20{\x20text-align:\x20center;\x20display:inline-block;\x20width:\x2033.3%;\x20}\x0d\x0a#custom-slider-cursor\x20{\x20width:\x201em\x20!important;\x20font-size:12px;\x20position:relative\x20!important;\x20height:\x201.25em;\x20top:\x2050%;\x20margin-top:\x20-.75em;\x20text-align:\x20center;\x20line-height:\x201.6em\x20!important;\x20}\x0d\x0a#custom-slider-grid\x20{\x20width:\x201em\x20!important;\x20font-size:12px;\x20position:relative\x20!important;\x20height:\x201.25em;\x20top:\x2050%;\x20margin-top:\x20-.75em;\x20text-align:\x20center;\x20line-height:\x201.6em\x20!important;\x20}\x0d\x0acanvas\x20{\x20position:absolute;\x20image-rendering:optimizeSpeed;\x20image-rendering:-moz-crisp-edges;\x20image-rendering:-webkit-optimize-contrast;\x20image-rendering:-o-crisp-edges;\x20image-rendering:optimize-contrast;\x20-ms-interpolation-mode:nearest-neighbor;\x20}\x0d\x0a.menu-text\x20{\x20display:inline;\x20}\x0d\x0a.CookiesButton\x20{\x20float:right;\x20background-color:DarkGreen;\x20color:white;\x20font-weight:bold;\x20cursor:pointer;\x20border-color:DarkGreen;\x20font-size:\x2014px\x20!important;\x20}\x0d\x0a.CookiesButton:hover\x20{\x20float:right;\x20background-color:DarkGreen\x20!important;\x20color:white;\x20font-weight:bold;\x20cursor:pointer;\x20border-color:lime\x20!important;\x20font-size:\x2014px\x20!important;\x20}\x0d\x0aspan.cookiesAndMilk\x20{\x20color:white;\x20float:left;\x20padding-top:5px;\x20display:block;\x20margin-left:.5em;\x20font-size:\x2013px;\x20}</style>','\x0d\x0a<div\x20id=\x22goto\x22\x20class=\x22GotoCss\x22>\x0d\x0a\x20\x20<h2\x20class=\x22title\x22>\x20Goto\x20template\x20</h2>\x0d\x0a\x20\x20<div\x20id=\x22close-goto\x22\x20class=\x22close\x22><i\x20class=\x22fas\x20fa-window-close\x22></i></div>\x0d\x0a\x20\x20<div\x20class=\x22ui-widget\x22\x20style=\x22padding:5px;\x22>\x0d\x0a\x20\x20\x20\x20<label\x20for=\x22inputName\x22>Template\x20name:\x20</label>\x0d\x0a\x20\x20\x20\x20<input\x20id=\x22inputName\x22>\x0d\x0a\x20\x20\x20\x20<button\x20id=\x22enter-goto\x22\x20class=\x22ui-button\x20ui-widget\x20ui-corner-all\x22>GO!</button>\x0d\x0a\x20\x20</div>\x0d\x0a</div>\x0d\x0a<div\x20id=\x22settings\x22\x20class=\x22SettingsCss\x22>\x0d\x0a\x20\x20\x20<h2\x20class=\x22title\x22>\x20Settings\x20</h2>\x0d\x0a\x20\x20\x20<div\x20id=\x22discord-link\x22\x20class=\x22discord\x22><small><u>Join\x20Discord</u></small>\x20<i\x20class=\x22fab\x20fa-discord\x22></i></div>\x0d\x0a\x20\x20\x20<div\x20id=\x22close-settings\x22\x20class=\x22close\x22><i\x20class=\x22fas\x20fa-window-close\x22></i></div>\x0d\x0a\x20\x20\x20<ul\x20class=\x22settings-list\x22>\x0d\x0a\x0d\x0a\x20\x20\x20\x20\x20\x20<!--\x20CATEGORIE\x20\x20-->\x0d\x0a\x20\x20\x20\x20\x20\x20<li\x20class=\x22smooth\x22><div\x20class=\x22fleft\x20small\x22>Template\x20categorie(s):\x20</div>\x0d\x0a\x20\x20\x20\x20\x20\x20<div\x20id=\x22config-categorie\x22></div></li>\x0d\x0a\x0d\x0a\x20\x20\x20\x20\x20<div\x20id=\x22BoxedSettings\x22>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20HIDE\x20ZOOM\x20-->\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20<li\x20class=\x22smooth\x22><div\x20class=\x22fleft\x20small\x22>Hide\x20zoom\x20slider</div>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22config-hidezoom\x22\x20class=\x22fright\x20clickable\x20settings-button\x22>Hide</div>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20</li>\x0d\x0a\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20HIDE\x20CURSOR\x20\x20-->\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20<li\x20class=\x22smooth\x22><div\x20class=\x22fleft\x20small\x22>Hide\x20cursor</div>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22config-hidecursor\x22\x20class=\x22fright\x20clickable\x20settings-button\x22>Hide</div>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20</li>\x0d\x0a\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20HIDE\x20GRID\x20\x20-->\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20<li\x20class=\x22smooth\x22><div\x20class=\x22fleft\x20small\x22>Hide\x20grid</div>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22config-hidegrid\x22\x20class=\x22fright\x20clickable\x20settings-button\x22>Hide</div>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20</li>\x0d\x0a\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20PLACE\x20PALLET\x20-->\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20<li\x20class=\x22smooth\x22><div\x20class=\x22fleft\x20small\x22>Place\x20palette</div>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22config-centerpallet\x22\x20class=\x22fright\x20clickable\x20settings-button\x22>Center</div>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20</li>\x0d\x0a\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20DISPLAY\x20TEXT\x20\x20-->\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20<li\x20class=\x22smooth\x22><div\x20class=\x22fleft\x20small\x22>Display\x20text</div><div\x20id=\x22config-displaytext\x22\x20class=\x22fright\x20settings-button\x22>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20<select\x20id=\x22config-text\x22\x20class=\x22fright\x22>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option>Icons\x20and\x20Text</option>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option>Text\x20only</option>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option>Icons\x20only</option>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div></li>\x0d\x0a\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20CURSOR\x20COLOR\x20\x20-->\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20<li\x20class=\x22smooth\x22\x20style=\x22padding-bottom:0.5em;\x22><div\x20class=\x22fleft\x20small\x22>Cursor\x20color</div><div\x20id=\x22config-cursorcolor\x22\x20class=\x22fright\x20settings-button\x22>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<select\x20runat=\x22server\x22\x20id=\x22CursorColor\x22\x20style=\x22min-width:105px;\x22>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22NAVY\x22\x20style=\x22background-color:\x20#001f3f;\x22\x20/>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22BLUE\x22\x20style=\x22background-color:\x20#0074D9;\x22\x20/>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22AQUA\x22\x20style=\x22background-color:\x20#7FDBFF;\x22\x20/>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22TEAL\x22\x20style=\x22background-color:\x20#39CCCC;\x22\x20/>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22OLIVE\x22\x20style=\x22background-color:\x20#3D9970;\x22\x20/>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22GREEN\x22\x20style=\x22background-color:\x20#2ECC40;\x22\x20/>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22LIME\x22\x20style=\x22background-color:\x20#01FF70;\x22\x20/>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22YELLOW\x22\x20style=\x22background-color:\x20#FFDC00;\x22\x20/>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22ORANGE\x22\x20style=\x22background-color:\x20#FF851B;\x22\x20/>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22RED\x22\x20style=\x22background-color:\x20#FF4136;\x22\x20/>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22MAROON\x22\x20style=\x22background-color:\x20#85144b;\x22\x20/>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22FUCHSIA\x22\x20style=\x22background-color:\x20#F012BE;\x22\x20/>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22PURPLE\x22\x20style=\x22background-color:\x20#B10DC9;\x22\x20/>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22BLACK\x22\x20style=\x22background-color:\x20#111111;\x22\x20/>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22GRAY\x22\x20style=\x22background-color:\x20#AAAAAA;\x22\x20/>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22SILVER\x22\x20style=\x22background-color:\x20#DDDDDD;\x22\x20/>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div></li>\x0d\x0a\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20SLIDER\x20CURSOR\x20\x20-->\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20<li\x20class=\x22smooth\x22><div\x20class=\x22fleft\x20small\x22>Cursor\x20transparency</div><div\x20id=\x22config-cursoralpha\x22\x20class=\x22fright\x20settings-button\x22>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22slider-cursor\x22\x20class=\x22slider\x22><div\x20id=\x22custom-slider-cursor\x22\x20class=\x22ui-slider-handle\x22></div></div>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div></li>\x0d\x0a\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20SLIDER\x20GRID\x20\x20-->\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20<li\x20class=\x22smooth\x22><div\x20class=\x22fleft\x20small\x22>Grid\x20transparency</div><div\x20id=\x22config-gridalpha\x22\x20class=\x22fright\x20settings-button\x22>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22slider-grid\x22\x20class=\x22slider\x22><div\x20id=\x22custom-slider-grid\x22\x20class=\x22ui-slider-handle\x22></div></div>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div></li>\x0d\x0a\x20\x20\x20\x20</div>\x0d\x0a\x0d\x0a\x20\x20\x20\x20\x20<li\x20style=\x22padding:3px\x22><!--\x20SPACE\x20--></li>\x0d\x0a\x0d\x0a\x20\x20\x20\x20\x20<!--\x20RESET\x20BUTTON\x20-->\x0d\x0a\x20\x20\x20\x20\x20<li\x20class=\x22smooth\x22>\x0d\x0a\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22config-reset\x22\x20class=\x22fright\x20clickable\x20settings-button\x22>Reset\x20settings</div>\x0d\x0a\x20\x20\x20\x20\x20</li>\x0d\x0a\x20\x20\x20</ul>\x0d\x0a\x0d\x0a\x20\x20\x20<div\x20class=\x22footer\x22><a\x20rel=\x22license\x22\x20href=\x22http://creativecommons.org/licenses/by-nc-nd/4.0/\x22\x20target=\x22_blank\x22><img\x20alt=\x22Creative\x20Commons\x20License\x22\x20style=\x22border-width:0;\x20float:left;\x20margin-top:10px;\x20margin-left:5px;\x22\x20src=\x22https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\x22\x20/></a><br\x20/>This\x20work\x20is\x20licensed\x20under\x20a\x20<a\x20rel=\x22license\x22\x20href=\x22http://creativecommons.org/licenses/by-nc-nd/4.0/\x22\x20target=\x22_blank\x22>Creative\x20Commons\x20Attribution-NonCommercial-NoDerivatives\x204.0\x20International\x20License</a>.</div>\x0d\x0a</div>\x0d\x0a<div\x20id=\x22minimap-backup\x22\x20style=\x22display:none\x22><span\x20class=\x22clickable\x22\x20style=\x22color:white;\x20display:block;padding:\x2015px\x2020px;\x22>\x20<i\x20class=\x22fas\x20fa-eye\x20menu-icon\x22></i>\x20<div\x20class=\x22menu-text\x22>\x20Open\x20minimap\x20</div>\x20</span></div>\x0d\x0a<div\x20id=\x22minimap-content\x22>\x0d\x0a\x20\x20\x20<div\x20id=\x22slider-vertical\x22\x20style=\x22height:200px;\x20width:0.5em;\x20position:absolute;\x20top:1em;\x20right:1em;\x20opacity:0.45;\x20z-index:9;\x22></div>\x0d\x0a\x20\x20\x20<canvas\x20id=\x22minimap\x22\x20width=\x221024\x22\x20height=\x22540\x22></canvas>\x0d\x0a\x20\x20\x20<canvas\x20id=\x22minimap-grid\x22\x20width=\x221024\x22\x20height=\x22540\x22></canvas>\x0d\x0a\x20\x20\x20<canvas\x20id=\x22minimap-cursor\x22\x20width=\x221024\x22\x20height=\x22540\x22></canvas>\x0d\x0a<div\x20id=\x22minimap-settings\x22\x20style=\x22margin-left:\x20-20px\x22>\x0d\x0a\x20\x20<ul\x20class=\x22toolbar\x22>\x0d\x0a\x20\x20\x20\x20\x20\x20<div\x20id=\x22i1\x22>\x20<li\x20class=\x22toolbar\x20clickable\x22\x20id=\x22hide-map\x22>\x20<i\x20class=\x22fas\x20fa-eye-slash\x20menu-icon\x22></i>\x20<div\x20class=\x22menu-text\x22>\x20Hide\x20minimap\x20</div>\x20</li>\x20</div>\x0d\x0a\x20\x20\x20\x20\x20\x20<div\x20id=\x22i2\x22>\x20<li\x20class=\x22toolbar\x20clickable\x22\x20id=\x22open-goto\x22>\x20<i\x20class=\x22fas\x20fa-chevron-circle-up\x20menu-icon\x22></i>\x20<div\x20class=\x22menu-text\x22>\x20Goto\x20template\x20</div>\x20</li>\x20</div>\x0d\x0a\x20\x20\x20\x20\x20\x20<div\x20id=\x22i3\x22>\x20<li\x20class=\x22toolbar\x20clickable\x22\x20id=\x22open-settings\x22>\x20<i\x20class=\x22fas\x20fa-cog\x20menu-icon\x22></i>\x20<div\x20class=\x22menu-text\x22>\x20Settings\x20</div>\x20</li>\x20</div>\x0d\x0a\x20\x20</ul>\x0d\x0a</div>\x0d\x0a</div>','pow','#001f3f','ready','div#app','children','cookie','WeUseCookies','div#minimap-content','slider','value','showMinimap','true','#minimap-content','hide','#minimap-backup','show','cursorColor','undefined','NAVY','log','cursorAlpha','gridAlpha','showSlider','#config-hidezoom','text','Show','Hide','#slider-vertical','showCursor','#config-hidecursor','showGrid','#config-hidegrid','centerPallet','#config-centerpallet','Center','div#colors','addClass','#app\x20>\x20div:nth-child(1)\x20>\x20div:nth-child(9)','moveUp','groupUp','#app\x20>\x20div:nth-child(1)\x20>\x20div:nth-child(9)\x20>\x20div:nth-child(1)','textDisplay','#config-text','selectedIndex','#config-text\x20option:selected','Icons\x20and\x20Text','.menu-text','.menu-icon','Text\x20only','Icons\x20only','zoom','categories','split','Checked\x20categories:\x20'];(function(_0x3b8759,_0x1a83cf){var _0x1508d2=function(_0x4923b7){while(--_0x4923b7){_0x3b8759['push'](_0x3b8759['shift']());}};_0x1508d2(++_0x1a83cf);}(_0x55d8,0x140));var _0x4fbd=function(_0x56270b,_0x983284){_0x56270b=_0x56270b-0x0;var _0x20c98d=_0x55d8[_0x56270b];return _0x20c98d;};Number[_0x4fbd('0x0')][_0x4fbd('0x1')]=function(_0x2764e6,_0x143da4){var _0x10cb9e=Math[_0x4fbd('0x2')][_0x4fbd('0x3')](Math,[_0x2764e6,_0x143da4]),_0x24af5e=Math['max'][_0x4fbd('0x3')](Math,[_0x2764e6,_0x143da4]);return this>_0x10cb9e&&this<_0x24af5e;};dataUrl=_0x4fbd('0x4');$(_0x4fbd('0x5'))[_0x4fbd('0x6')](_0x4fbd('0x7'));$(_0x4fbd('0x5'))['append']($(_0x4fbd('0x8')));minimapHTML=_0x4fbd('0x9');cookieHTML='\x0d\x0a<div\x20id=\x22CookieBar\x22\x20style=\x22z-index:999;\x20position:absolute;\x20background-color:black;\x20right:0;\x20top:0;\x20width:480px;\x22>\x0d\x0a\x20\x20<span\x20class=\x22cookiesAndMilk\x22>We\x20use\x20cookies\x20and\x20milk\x20to\x20keep\x20track\x20your\x20settings.</span>\x0d\x0a\x20\x20<button\x20id=\x22CookiesOk\x22\x20class=\x22CookiesButton\x20ui-button\x20ui-widget\x20ui-corner-all\x22>I\x20Understand!</button>\x0d\x0a</div>';var attempt=0x0;var curX=null;var curY=null;var _zoom=0x23;var max_zoom=0x3c;var FinalZoom=calcZoom(Math[_0x4fbd('0xa')](1.1,_zoom));var templateList=[];var categorieList=[];var storedTemplates={};var cursorColor=_0x4fbd('0xb');var cursorAlpha=0x5a;var gridAlpha=0x32;var showSlider=!![];var showCursor=!![];var showGrid=!![];var textDisplay=0x0;var centerPallet=!![];var availableFactions=[];var hitzone=0x0;$(document)[_0x4fbd('0xc')](function(){'use strict';loadJsonLoop();loadTemplates();$(_0x4fbd('0xd'))[_0x4fbd('0xe')]()['append'](minimapHTML);if($[_0x4fbd('0xf')](_0x4fbd('0x10'))==='0'||typeof $[_0x4fbd('0xf')](_0x4fbd('0x10'))==='undefined'){$(_0x4fbd('0x11'))[_0x4fbd('0x6')](cookieHTML);};setupCookies();setupCanvas();setupEvents();$('#slider-vertical')[_0x4fbd('0x12')](_0x4fbd('0x13'),_zoom);});function setupCookies(){if(typeof $['cookie']('showMinimap')==='undefined'){$[_0x4fbd('0xf')](_0x4fbd('0x14'),_0x4fbd('0x15'),{'expires':0x16d});}else{if($[_0x4fbd('0xf')](_0x4fbd('0x14'))==='false'){$(_0x4fbd('0x16'))[_0x4fbd('0x17')]();$(_0x4fbd('0x18'))[_0x4fbd('0x19')]();}};if(typeof $[_0x4fbd('0xf')](_0x4fbd('0x1a'))===_0x4fbd('0x1b')){getCursorColor(_0x4fbd('0x1c'),!![]);}else{console[_0x4fbd('0x1d')](getCursorColor($[_0x4fbd('0xf')](_0x4fbd('0x1a'))));getCursorColor($[_0x4fbd('0xf')]('cursorColor'));};if(typeof $[_0x4fbd('0xf')](_0x4fbd('0x10'))===_0x4fbd('0x1b')){$[_0x4fbd('0xf')](_0x4fbd('0x10'),0x0,{'expires':0x16d});};if(typeof $[_0x4fbd('0xf')](_0x4fbd('0x1e'))===_0x4fbd('0x1b')){$[_0x4fbd('0xf')](_0x4fbd('0x1e'),cursorAlpha,{'expires':0x16d});}else{cursorAlpha=$[_0x4fbd('0xf')](_0x4fbd('0x1e'));};if(typeof $[_0x4fbd('0xf')](_0x4fbd('0x1f'))===_0x4fbd('0x1b')){$[_0x4fbd('0xf')](_0x4fbd('0x1f'),gridAlpha,{'expires':0x16d});}else{gridAlpha=$[_0x4fbd('0xf')](_0x4fbd('0x1f'));};if(typeof $[_0x4fbd('0xf')](_0x4fbd('0x20'))===_0x4fbd('0x1b')){$[_0x4fbd('0xf')]('showSlider',_0x4fbd('0x15'),{'expires':0x16d});}else{showSlider=$[_0x4fbd('0xf')](_0x4fbd('0x20'))===_0x4fbd('0x15')?!![]:![];$(_0x4fbd('0x21'))[_0x4fbd('0x22')](!showSlider?_0x4fbd('0x23'):_0x4fbd('0x24'));if(showSlider){$(_0x4fbd('0x25'))[_0x4fbd('0x19')]();}else{$(_0x4fbd('0x25'))[_0x4fbd('0x17')]();}};if(typeof $[_0x4fbd('0xf')](_0x4fbd('0x26'))==='undefined'){$[_0x4fbd('0xf')](_0x4fbd('0x26'),_0x4fbd('0x15'),{'expires':0x16d});}else{showCursor=$[_0x4fbd('0xf')]('showCursor')===_0x4fbd('0x15')?!![]:![];$(_0x4fbd('0x27'))[_0x4fbd('0x22')](!showCursor?'Show':_0x4fbd('0x24'));};if(typeof $[_0x4fbd('0xf')](_0x4fbd('0x28'))===_0x4fbd('0x1b')){$['cookie']('showGrid',_0x4fbd('0x15'),{'expires':0x16d});}else{showGrid=$[_0x4fbd('0xf')](_0x4fbd('0x28'))===_0x4fbd('0x15')?!![]:![];$(_0x4fbd('0x29'))[_0x4fbd('0x22')](!showGrid?_0x4fbd('0x23'):'Hide');};if(typeof $['cookie'](_0x4fbd('0x2a'))===_0x4fbd('0x1b')){$[_0x4fbd('0xf')]('centerPallet',_0x4fbd('0x15'),{'expires':0x16d});}else{centerPallet=$[_0x4fbd('0xf')](_0x4fbd('0x2a'))===_0x4fbd('0x15')?!![]:![];$(_0x4fbd('0x2b'))[_0x4fbd('0x22')](!centerPallet?_0x4fbd('0x2c'):'Left');if(!centerPallet){$(_0x4fbd('0x2d'))[_0x4fbd('0x2e')]('colorsLeft');$(_0x4fbd('0x2f'))[_0x4fbd('0x2e')](_0x4fbd('0x30'));$('#app\x20>\x20div:nth-child(1)\x20>\x20div:nth-child(9)\x20>\x20div:nth-child(2)')[_0x4fbd('0x2e')](_0x4fbd('0x31'));$(_0x4fbd('0x32'))[_0x4fbd('0x2e')](_0x4fbd('0x31'));}};if(typeof $[_0x4fbd('0xf')]('textDisplay')===_0x4fbd('0x1b')){$[_0x4fbd('0xf')](_0x4fbd('0x33'),textDisplay,{'expires':0x16d});}else{textDisplay=$['cookie'](_0x4fbd('0x33'));$(_0x4fbd('0x34'))['prop'](_0x4fbd('0x35'),textDisplay);_displayText=$(_0x4fbd('0x36'))[_0x4fbd('0x22')]();if(_displayText===_0x4fbd('0x37')){textDisplay=0x0;$[_0x4fbd('0xf')](_0x4fbd('0x33'),0x0,{'expires':0x16d});$(_0x4fbd('0x38'))[_0x4fbd('0x19')]();$(_0x4fbd('0x39'))[_0x4fbd('0x19')]();}else{if(_displayText===_0x4fbd('0x3a')){textDisplay=0x1;$['cookie'](_0x4fbd('0x33'),0x1,{'expires':0x16d});$(_0x4fbd('0x38'))[_0x4fbd('0x19')]();$(_0x4fbd('0x39'))[_0x4fbd('0x17')]();}else{if(_displayText===_0x4fbd('0x3b')){textDisplay=0x2;$[_0x4fbd('0xf')](_0x4fbd('0x33'),0x2,{'expires':0x16d});$(_0x4fbd('0x38'))[_0x4fbd('0x17')]();$('.menu-icon')[_0x4fbd('0x19')]();}}}};if(typeof $[_0x4fbd('0xf')](_0x4fbd('0x3c'))===_0x4fbd('0x1b')){$[_0x4fbd('0xf')](_0x4fbd('0x3c'),_zoom,{'expires':0x16d});}else{_zoom=$[_0x4fbd('0xf')](_0x4fbd('0x3c'));FinalZoom=calcZoom(Math[_0x4fbd('0xa')](1.1,_zoom));};if(typeof $[_0x4fbd('0xf')](_0x4fbd('0x3d'))===_0x4fbd('0x1b')){$[_0x4fbd('0xf')](_0x4fbd('0x3d'),'',{'expires':0x16d});}else{var _0x36c60f=$[_0x4fbd('0xf')]('categories')[_0x4fbd('0x3e')]('\x20');console[_0x4fbd('0x1d')](_0x4fbd('0x3f')+_0x36c60f+_0x4fbd('0x40')+$[_0x4fbd('0xf')](_0x4fbd('0x3d'))+',\x20');_url=dataUrl+_0x4fbd('0x41');$[_0x4fbd('0x42')]({'type':_0x4fbd('0x43'),'url':_url,'dataType':_0x4fbd('0x44'),'success':function(_0x3dd7ce){categories=jQuery[_0x4fbd('0x45')](JSON[_0x4fbd('0x46')](_0x3dd7ce))['Categories'];categories[_0x4fbd('0x47')]();for(var _0x53f5cf=0x0;_0x53f5cf<categories[_0x4fbd('0x48')];_0x53f5cf++){$(_0x4fbd('0x49'))['append'](_0x4fbd('0x4a')+categories[_0x53f5cf][0x1]+'\x22\x20'+($[_0x4fbd('0x4b')](categories[_0x53f5cf][0x1],_0x36c60f)>-0x1?'checked=true':'')+_0x4fbd('0x4c')+categories[_0x53f5cf][0x1]+'\x22>'+categories[_0x53f5cf][0x0]+_0x4fbd('0x4d'));}}});};console[_0x4fbd('0x1d')](''+$[_0x4fbd('0xf')](_0x4fbd('0x1e'))+'\x20'+$[_0x4fbd('0xf')](_0x4fbd('0x1f'))+'\x20'+$[_0x4fbd('0xf')](_0x4fbd('0x26'))+'\x20'+$[_0x4fbd('0xf')](_0x4fbd('0x28'))+'\x20'+$[_0x4fbd('0xf')]('textDisplay')+'\x20'+$[_0x4fbd('0xf')](_0x4fbd('0x3c'))+'');}function setupEvents(){$(_0x4fbd('0x4e'))[_0x4fbd('0x4f')](function(){getCursorColor($(this)[_0x4fbd('0x50')](),!![]);});$(_0x4fbd('0x51'))[_0x4fbd('0x52')](function(){$[_0x4fbd('0xf')](_0x4fbd('0x10'),0x1,{'expires':0x16d});$('#CookieBar')['slideUp'](0x64);});$(_0x4fbd('0x53'))[_0x4fbd('0x52')](function(){window[_0x4fbd('0x54')](_0x4fbd('0x55'),_0x4fbd('0x56'));});$(_0x4fbd('0x57'))[_0x4fbd('0x58')]({'source':availableFactions});$(_0x4fbd('0x59'))[_0x4fbd('0x52')](function(){inputTxt=$(_0x4fbd('0x57'))[_0x4fbd('0x50')]();if(templateList[_0x4fbd('0x5a')](inputTxt)){var _0x5c4548=Math[_0x4fbd('0x5b')](templateList[inputTxt]['x']+templateList[inputTxt][_0x4fbd('0x5c')]/0x2);var _0x28a468=Math['round'](templateList[inputTxt]['y']+templateList[inputTxt]['height']/0x2);window[_0x4fbd('0x5d')][_0x4fbd('0x5e')]('http://pixelcanvas.io/@'+_0x5c4548+','+_0x28a468+'');}});$(_0x4fbd('0x57'))['keypress'](function(_0x1d6f0a){if(_0x1d6f0a[_0x4fbd('0x5f')]==0xd){inputTxt=$(_0x4fbd('0x57'))[_0x4fbd('0x50')]();if(templateList[_0x4fbd('0x5a')](inputTxt)){var _0x57ef8a=Math[_0x4fbd('0x5b')](templateList[inputTxt]['x']+templateList[inputTxt]['width']/0x2);var _0x516ebc=Math['round'](templateList[inputTxt]['y']+templateList[inputTxt]['height']/0x2);window['location'][_0x4fbd('0x5e')](_0x4fbd('0x60')+_0x57ef8a+','+_0x516ebc+'');}}});$('#open-goto')[_0x4fbd('0x52')](function(){var _0x32120a=$(_0x4fbd('0x61'));var _0x1e26af=$('.GotoCss:visible');if(_0x1e26af[_0x4fbd('0x48')]>0x0){$('.GotoCss:visible')[_0x4fbd('0x62')](0x1f4);return;};VisibleBoxies();_0x32120a[_0x4fbd('0x63')](0x1f4);});var _0x48d20f=$(_0x4fbd('0x64'));$(_0x4fbd('0x65'))[_0x4fbd('0x12')]({'range':'min','min':0x0,'max':0x64,'value':$[_0x4fbd('0xf')](_0x4fbd('0x1e')),'create':function(){val=$(this)['slider'](_0x4fbd('0x13'));_0x48d20f[_0x4fbd('0x22')](val);cursorAlpha=parseInt(val);$[_0x4fbd('0xf')]('cursorAlpha',cursorAlpha,{'expires':0x16d});},'slide':function(_0xfbf046,_0x376471){val=_0x376471[_0x4fbd('0x13')];_0x48d20f[_0x4fbd('0x22')](_0x376471['value']);cursorAlpha=parseInt(val);$[_0x4fbd('0xf')](_0x4fbd('0x1e'),cursorAlpha,{'expires':0x16d});}});var _0x3cddd5=$('#custom-slider-grid');$(_0x4fbd('0x66'))['slider']({'range':_0x4fbd('0x2'),'min':0x0,'max':0x64,'value':$['cookie'](_0x4fbd('0x1f')),'create':function(){val=$(this)[_0x4fbd('0x12')](_0x4fbd('0x13'));_0x3cddd5[_0x4fbd('0x22')]($(this)[_0x4fbd('0x12')](_0x4fbd('0x13')));gridAlpha=parseInt(val);$[_0x4fbd('0xf')](_0x4fbd('0x1f'),gridAlpha,{'expires':0x16d});},'slide':function(_0xaf5808,_0x1df026){val=_0x1df026[_0x4fbd('0x13')];_0x3cddd5['text'](_0x1df026[_0x4fbd('0x13')]);gridAlpha=parseInt(val);$[_0x4fbd('0xf')](_0x4fbd('0x1f'),gridAlpha,{'expires':0x16d});}});$(_0x4fbd('0x67'))[_0x4fbd('0x52')](function(){if(window[_0x4fbd('0x68')](_0x4fbd('0x69'))){cursorAlpha=0x5a;cursorColor='NAVY';gridAlpha=0x32;showSlider=!![];showCursor=!![];showGrid=!![];textDisplay=0x0;_zoom=0x1e;centerPallet=!![];_0x48d20f[_0x4fbd('0x22')](cursorAlpha);_0x3cddd5[_0x4fbd('0x22')](gridAlpha);$[_0x4fbd('0xf')](_0x4fbd('0x1e'),cursorAlpha,{'expires':0x16d});$['cookie']('gridAlpha',gridAlpha,{'expires':0x16d});$['cookie'](_0x4fbd('0x26'),showCursor,{'expires':0x16d});$[_0x4fbd('0xf')](_0x4fbd('0x28'),showGrid,{'expires':0x16d});$[_0x4fbd('0xf')](_0x4fbd('0x33'),textDisplay,{'expires':0x16d});$['cookie'](_0x4fbd('0x3c'),_zoom,{'expires':0x16d});$[_0x4fbd('0xf')](_0x4fbd('0x2a'),centerPallet,{'expires':0x16d});$[_0x4fbd('0xf')](_0x4fbd('0x3d'),'',{'expires':0x16d});$[_0x4fbd('0xf')](_0x4fbd('0x1a'),'NAVY',{'expires':0x16d});window[_0x4fbd('0x5d')][_0x4fbd('0x6a')]();}});$('#config-text')[_0x4fbd('0x52')](function(){_displayText=$('#config-text\x20option:selected')[_0x4fbd('0x22')]();console['log'](_displayText);if(_displayText===_0x4fbd('0x37')){textDisplay=0x0;$['cookie'](_0x4fbd('0x33'),0x0,{'expires':0x16d});$(_0x4fbd('0x38'))[_0x4fbd('0x19')]();$(_0x4fbd('0x39'))[_0x4fbd('0x19')]();}else{if(_displayText===_0x4fbd('0x3a')){textDisplay=0x1;$[_0x4fbd('0xf')](_0x4fbd('0x33'),0x1,{'expires':0x16d});$(_0x4fbd('0x38'))[_0x4fbd('0x19')]();$(_0x4fbd('0x39'))[_0x4fbd('0x17')]();}else{if(_displayText===_0x4fbd('0x3b')){textDisplay=0x2;$['cookie'](_0x4fbd('0x33'),0x2,{'expires':0x16d});$(_0x4fbd('0x38'))[_0x4fbd('0x17')]();$(_0x4fbd('0x39'))[_0x4fbd('0x19')]();}}}});$(_0x4fbd('0x27'))[_0x4fbd('0x52')](function(){showCursor=!showCursor;$(_0x4fbd('0x27'))[_0x4fbd('0x22')](!showCursor?_0x4fbd('0x23'):_0x4fbd('0x24'));$[_0x4fbd('0xf')]('showCursor',showCursor,{'expires':0x16d});});$(_0x4fbd('0x29'))[_0x4fbd('0x52')](function(){showGrid=!showGrid;$(_0x4fbd('0x29'))[_0x4fbd('0x22')](!showGrid?_0x4fbd('0x23'):_0x4fbd('0x24'));$[_0x4fbd('0xf')](_0x4fbd('0x28'),showGrid,{'expires':0x16d});});$(_0x4fbd('0x21'))[_0x4fbd('0x52')](function(){showSlider=!showSlider;$(_0x4fbd('0x21'))['text'](!showSlider?_0x4fbd('0x23'):_0x4fbd('0x24'));if(showSlider){$('#slider-vertical')[_0x4fbd('0x19')]();}else{$(_0x4fbd('0x25'))['hide']();};$[_0x4fbd('0xf')](_0x4fbd('0x20'),showSlider,{'expires':0x16d});});$(_0x4fbd('0x2b'))[_0x4fbd('0x52')](function(){centerPallet=!centerPallet;$(_0x4fbd('0x2b'))[_0x4fbd('0x22')](!centerPallet?_0x4fbd('0x2c'):_0x4fbd('0x6b'));$('div#colors')[_0x4fbd('0x6c')]('colorsLeft');$(_0x4fbd('0x2f'))[_0x4fbd('0x6c')](_0x4fbd('0x30'));$(_0x4fbd('0x6d'))[_0x4fbd('0x6c')](_0x4fbd('0x31'));$(_0x4fbd('0x32'))[_0x4fbd('0x6c')](_0x4fbd('0x31'));$['cookie'](_0x4fbd('0x2a'),centerPallet,{'expires':0x16d});});$(_0x4fbd('0x25'))[_0x4fbd('0x12')]({'orientation':_0x4fbd('0x6e'),'range':_0x4fbd('0x2'),'min':0xa,'max':0x3c,'value':0x1e,'slide':function(_0xc8092a,_0x5f42e6){_zoom=_0x5f42e6[_0x4fbd('0x13')];FinalZoom=calcZoom(Math['pow'](1.1,_zoom));$[_0x4fbd('0xf')](_0x4fbd('0x3c'),_zoom,{'expires':0x16d});}});$(_0x4fbd('0x6f'))[_0x4fbd('0x52')](function(){var _0x4ead01=$(_0x4fbd('0x70'));var _0x3b9a61=$(_0x4fbd('0x71'));if(_0x3b9a61[_0x4fbd('0x48')]>0x0){$('.SettingsCss:visible')['slideUp'](0x1f4);return;};VisibleBoxies();_0x4ead01[_0x4fbd('0x63')](0x1f4);});$(_0x4fbd('0x72'))['click'](function(){var _0x125cf8=$(_0x4fbd('0x70'));if(_0x125cf8['is'](_0x4fbd('0x73'))){_0x125cf8[_0x4fbd('0x62')](0x1f4);return;};var _0x4290a8=$(_0x4fbd('0x71'));if(_0x4290a8[_0x4fbd('0x48')]>0x0){$(_0x4fbd('0x71'))[_0x4fbd('0x62')](0x1f4);}});$(_0x4fbd('0x74'))[_0x4fbd('0x52')](function(){var _0x38125f=$(_0x4fbd('0x61'));if(_0x38125f['is'](_0x4fbd('0x73'))){_0x38125f[_0x4fbd('0x62')](0x1f4);return;};var _0x2fc2be=$(_0x4fbd('0x75'));if(_0x2fc2be[_0x4fbd('0x48')]>0x0){$(_0x4fbd('0x75'))[_0x4fbd('0x62')](0x1f4);}});$('#minimap-content')[_0x4fbd('0x76')](function(){if($(_0x4fbd('0x16'))['hasClass']('minimize')){$(_0x4fbd('0x16'))['removeClass'](_0x4fbd('0x77'));}});$(_0x4fbd('0x78'))[_0x4fbd('0x52')](function(){$(_0x4fbd('0x16'))['hide']();$(_0x4fbd('0x18'))[_0x4fbd('0x19')]();$['cookie'](_0x4fbd('0x14'),_0x4fbd('0x79'),{'expires':0x16d});});$('#minimap-backup')[_0x4fbd('0x52')](function(){$(_0x4fbd('0x16'))[_0x4fbd('0x19')]();$(_0x4fbd('0x18'))['hide']();$[_0x4fbd('0xf')](_0x4fbd('0x14'),_0x4fbd('0x15'),{'expires':0x16d});});$(_0x4fbd('0x7a'))[_0x4fbd('0x7b')](function(){var _0x289abc=$('div[style*=\x22position:\x20absolute;\x20left:\x201em;\x20bottom:\x201em;\x22]')[0x0][_0x4fbd('0x7c')][_0x4fbd('0x5e')]('(','')[_0x4fbd('0x5e')](')','')['split'](',');curX=parseInt(_0x289abc[0x0]);curY=parseInt(_0x289abc[0x1]);loadTemplates();drawGrid();drawCursor();});}function getCursorColor(_0x5b1769,_0x4213db=![]){switch(_0x5b1769){default:;case _0x4fbd('0x1c'):{$(_0x4fbd('0x4e'))[_0x4fbd('0x7d')](_0x4fbd('0x7e'),_0x4fbd('0xb'));if(_0x4213db){$[_0x4fbd('0xf')](_0x4fbd('0x1a'),_0x4fbd('0x1c'),{'expires':0x16d});};cursorColor=_0x4fbd('0xb');return _0x4fbd('0xb');}break;case _0x4fbd('0x7f'):{$(_0x4fbd('0x4e'))[_0x4fbd('0x7d')](_0x4fbd('0x7e'),_0x4fbd('0x80'));if(_0x4213db){$['cookie'](_0x4fbd('0x1a'),_0x4fbd('0x7f'),{'expires':0x16d});};cursorColor=_0x4fbd('0x80');return _0x4fbd('0x80');}break;case _0x4fbd('0x81'):{$(_0x4fbd('0x4e'))[_0x4fbd('0x7d')](_0x4fbd('0x7e'),_0x4fbd('0x82'));if(_0x4213db){$[_0x4fbd('0xf')](_0x4fbd('0x1a'),_0x4fbd('0x81'),{'expires':0x16d});};cursorColor='#7FDBFF';return _0x4fbd('0x82');}break;case _0x4fbd('0x83'):{$('#CursorColor')[_0x4fbd('0x7d')]('background-color',_0x4fbd('0x84'));if(_0x4213db){$[_0x4fbd('0xf')]('cursorColor',_0x4fbd('0x83'),{'expires':0x16d});};cursorColor=_0x4fbd('0x84');return _0x4fbd('0x84');}break;case'OLIVE':{$(_0x4fbd('0x4e'))['css'](_0x4fbd('0x7e'),'#3D9970');if(_0x4213db){$[_0x4fbd('0xf')](_0x4fbd('0x1a'),_0x4fbd('0x85'),{'expires':0x16d});};cursorColor=_0x4fbd('0x86');return _0x4fbd('0x86');}break;case _0x4fbd('0x87'):{$(_0x4fbd('0x4e'))[_0x4fbd('0x7d')](_0x4fbd('0x7e'),'#2ECC40');if(_0x4213db){$[_0x4fbd('0xf')](_0x4fbd('0x1a'),_0x4fbd('0x87'),{'expires':0x16d});};cursorColor=_0x4fbd('0x88');return _0x4fbd('0x88');}break;case _0x4fbd('0x89'):{$(_0x4fbd('0x4e'))[_0x4fbd('0x7d')](_0x4fbd('0x7e'),_0x4fbd('0x8a'));if(_0x4213db){$['cookie'](_0x4fbd('0x1a'),'LIME',{'expires':0x16d});};cursorColor=_0x4fbd('0x8a');return _0x4fbd('0x8a');}break;case _0x4fbd('0x8b'):{$('#CursorColor')[_0x4fbd('0x7d')](_0x4fbd('0x7e'),_0x4fbd('0x8c'));if(_0x4213db){$[_0x4fbd('0xf')](_0x4fbd('0x1a'),_0x4fbd('0x8b'),{'expires':0x16d});};cursorColor=_0x4fbd('0x8c');return _0x4fbd('0x8c');}break;case'ORANGE':{$(_0x4fbd('0x4e'))[_0x4fbd('0x7d')](_0x4fbd('0x7e'),_0x4fbd('0x8d'));if(_0x4213db){$['cookie']('cursorColor',_0x4fbd('0x8e'),{'expires':0x16d});};cursorColor='#FF851B';return'#FF851B';}break;case _0x4fbd('0x8f'):{$(_0x4fbd('0x4e'))[_0x4fbd('0x7d')](_0x4fbd('0x7e'),_0x4fbd('0x90'));if(_0x4213db){$[_0x4fbd('0xf')]('cursorColor',_0x4fbd('0x8f'),{'expires':0x16d});};cursorColor=_0x4fbd('0x90');return _0x4fbd('0x90');}break;case'MAROON':{$(_0x4fbd('0x4e'))[_0x4fbd('0x7d')](_0x4fbd('0x7e'),'#85144b');if(_0x4213db){$[_0x4fbd('0xf')](_0x4fbd('0x1a'),'MAROON',{'expires':0x16d});};cursorColor='#85144b';return _0x4fbd('0x91');}break;case _0x4fbd('0x92'):{$(_0x4fbd('0x4e'))[_0x4fbd('0x7d')](_0x4fbd('0x7e'),_0x4fbd('0x93'));if(_0x4213db){$['cookie'](_0x4fbd('0x1a'),_0x4fbd('0x92'),{'expires':0x16d});};cursorColor=_0x4fbd('0x93');return _0x4fbd('0x93');}break;case'PURPLE':{$(_0x4fbd('0x4e'))[_0x4fbd('0x7d')](_0x4fbd('0x7e'),_0x4fbd('0x94'));if(_0x4213db){$[_0x4fbd('0xf')](_0x4fbd('0x1a'),_0x4fbd('0x95'),{'expires':0x16d});};cursorColor=_0x4fbd('0x94');return _0x4fbd('0x94');}break;case _0x4fbd('0x96'):{$(_0x4fbd('0x4e'))[_0x4fbd('0x7d')](_0x4fbd('0x7e'),_0x4fbd('0x97'));if(_0x4213db){$[_0x4fbd('0xf')](_0x4fbd('0x1a'),_0x4fbd('0x96'),{'expires':0x16d});};cursorColor=_0x4fbd('0x97');return _0x4fbd('0x97');}break;case _0x4fbd('0x98'):{$('#CursorColor')[_0x4fbd('0x7d')](_0x4fbd('0x7e'),_0x4fbd('0x99'));if(_0x4213db){$[_0x4fbd('0xf')]('cursorColor','GRAY',{'expires':0x16d});};cursorColor=_0x4fbd('0x99');return _0x4fbd('0x99');}break;case _0x4fbd('0x9a'):{$(_0x4fbd('0x4e'))[_0x4fbd('0x7d')]('background-color','#DDDDDD');if(_0x4213db){$[_0x4fbd('0xf')](_0x4fbd('0x1a'),_0x4fbd('0x9a'),{'expires':0x16d});};cursorColor=_0x4fbd('0x9b');return'#DDDDDD';}break;}}function calcZoom(_0xcda48c){return parseInt(Math['min'](max_zoom,Math[_0x4fbd('0x9c')](0x1,_0xcda48c)));}function isMenuVisible(){return!$(_0x4fbd('0x18'))['is'](_0x4fbd('0x73'))&&$(_0x4fbd('0x16'))['is'](_0x4fbd('0x73'));}function VisibleBoxies(){var _0x451ee8=$(_0x4fbd('0x70'));if(_0x451ee8['is'](_0x4fbd('0x73'))){_0x451ee8[_0x4fbd('0x62')](0x1f4);return;};var _0x5b8ccf=$(_0x4fbd('0x61'));if(_0x5b8ccf['is'](_0x4fbd('0x73'))){_0x5b8ccf[_0x4fbd('0x62')](0x1f4);return;}}function loadJsonLoop(){_url=dataUrl+_0x4fbd('0x41');$[_0x4fbd('0x42')]({'type':_0x4fbd('0x43'),'url':_url,'dataType':_0x4fbd('0x44'),'success':function(_0x510764){updateTemplates(jQuery[_0x4fbd('0x45')](JSON[_0x4fbd('0x46')](_0x510764))['Templates']);}});setTimeout(loadJsonLoop,0x3c*0x3c*0x3c);}function hexToRgb(_0x5159f7){var _0x11e01c=/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i[_0x4fbd('0x9d')](_0x5159f7);return _0x11e01c?{'r':parseInt(_0x11e01c[0x1],0x10),'g':parseInt(_0x11e01c[0x2],0x10),'b':parseInt(_0x11e01c[0x3],0x10)}:null;}function drawCursor(){_minimap_cursor[_0x4fbd('0x9e')](0x0,0x0,minimap[_0x4fbd('0x5c')],minimap[_0x4fbd('0x9f')]);if(!isMenuVisible()||!showCursor){return;};_minimap_cursor[_0x4fbd('0xa0')]();var _0xf17bb0=minimap[_0x4fbd('0x5c')]+FinalZoom;var _0x2178c4=minimap[_0x4fbd('0x9f')]+FinalZoom;var _0x49ab58=_0xf17bb0/0x2;var _0x970b6b=_0x2178c4/0x2;var _0x73a7cb=hexToRgb(cursorColor);_minimap_cursor['lineWidth']=parseInt(0.15*FinalZoom);_minimap_cursor[_0x4fbd('0xa1')]='rgba('+_0x73a7cb['r']+',\x20'+_0x73a7cb['g']+',\x20'+_0x73a7cb['b']+',\x20'+cursorAlpha/0x64+')';_minimap_cursor['rect'](_0x49ab58-FinalZoom/0x2,_0x970b6b-FinalZoom/0x2,FinalZoom,FinalZoom);_minimap_cursor[_0x4fbd('0xa2')]();}function drawGrid(){var _0x18bec1=0x0;_minimap_grid[_0x4fbd('0x9e')](0x0,0x0,minimap[_0x4fbd('0x5c')],minimap[_0x4fbd('0x9f')]);if(!isMenuVisible()||!showGrid||FinalZoom<0x11){var _0x4d3ecb=minimap[_0x4fbd('0x5c')]+FinalZoom;for(var _0x575a2a=0x0;_0x575a2a<=_0x4d3ecb;_0x575a2a+=FinalZoom){_0x18bec1+=0x1;}}else{_minimap_grid[_0x4fbd('0xa0')]();var _0x4d3ecb=minimap[_0x4fbd('0x5c')]+FinalZoom;var _0x13337c=minimap[_0x4fbd('0x9f')]+FinalZoom;var _0x3c856d=minimap[_0x4fbd('0x5c')]/0x2%FinalZoom-FinalZoom;var _0x4cb08e=minimap[_0x4fbd('0x9f')]/0x2%FinalZoom-FinalZoom;console['log'](_0x4fbd('0xa3')+_0x4d3ecb+',\x20'+_0x13337c+_0x4fbd('0xa4')+_0x3c856d+',\x20'+_0x4cb08e+']');_minimap_grid[_0x4fbd('0xa5')]=_0x4fbd('0xa6')+gridAlpha/0x64+')';var _0x1f1934=0x1;var _0x41edd7=_0x1f1934%0x2/0x2;_minimap_grid[_0x4fbd('0xa7')](_0x41edd7,0x0);for(var _0x575a2a=0x0;_0x575a2a<=_0x4d3ecb;_0x575a2a+=FinalZoom){_0x18bec1+=0x1;_minimap_grid[_0x4fbd('0xa8')](_0x575a2a+_0x3c856d,_0x4cb08e,_0x1f1934,_0x13337c);};_minimap_grid[_0x4fbd('0xa7')](-_0x41edd7,0x0);_minimap_grid[_0x4fbd('0xa7')](0x0,_0x41edd7);for(var _0x12d6d7=0x0;_0x12d6d7<=_0x13337c;_0x12d6d7+=FinalZoom){_minimap_grid[_0x4fbd('0xa8')](_0x3c856d,_0x12d6d7+_0x4cb08e,_0x4d3ecb,_0x1f1934);};_minimap_grid['translate'](0x0,-_0x41edd7);_minimap_grid[_0x4fbd('0xa2')]();};hitzone=_0x18bec1;console[_0x4fbd('0x1d')](_0x4fbd('0xa9'),hitzone);}function drawImage(_0x38f8b2,_0x5d7aa5,_0x237792,_0x264a44,_0x5d6490,_0x2e6571){attempt=0x0;$(_0x4fbd('0x16'))[_0x4fbd('0xaa')]('minimize');var _0x153fe8=minimap[_0x4fbd('0x5c')]/FinalZoom/0x2;var _0x3d87fa=minimap[_0x4fbd('0x9f')]/FinalZoom/0x2;var _0x36e2fb=(_0x153fe8+_0x237792)*FinalZoom;var _0x9075af=(_0x3d87fa+_0x264a44)*FinalZoom;var _0x2c0f2d=FinalZoom*_0x5d6490;var _0x3344e4=FinalZoom*_0x2e6571;console[_0x4fbd('0x1d')](_0x4fbd('0xab')+_0x237792+'\x20y:\x20'+_0x264a44+'\x20W:\x20'+_0x5d6490+'\x20H:\x20'+_0x2e6571+_0x4fbd('0xac')+FinalZoom+')\x20('+_zoom+')');if(storedTemplates[_0x4fbd('0x5a')](_0x5d7aa5)){_0x38f8b2[_0x4fbd('0xad')](storedTemplates[_0x5d7aa5],_0x36e2fb,_0x9075af,_0x2c0f2d,_0x3344e4);}else{var _0x4ae6e7=new Image();_0x4ae6e7['src']=dataUrl+_0x5d7aa5+_0x4fbd('0xae');_0x4ae6e7['onload']=function(){_0x38f8b2[_0x4fbd('0xad')](_0x4ae6e7,_0x36e2fb,_0x9075af,_0x2c0f2d,_0x3344e4);storedTemplates[_0x5d7aa5]=_0x4ae6e7;};}}function updateTemplates(_0x2561d3){templateList=_0x2561d3;for(var _0x26802b in _0x2561d3){if(!availableFactions[_0x4fbd('0xaf')](_0x26802b)){availableFactions[_0x4fbd('0xb0')](_0x26802b);}}}function loadTemplates(){arrayAttempt=[];if(!isMenuVisible()){return;};_minimap[_0x4fbd('0x9e')](0x0,0x0,minimap[_0x4fbd('0x5c')],minimap[_0x4fbd('0x9f')]);for(var _0x12dc8e in templateList){if(templateList[_0x4fbd('0x5a')](_0x12dc8e)){var _0x24e69d=[];$(_0x4fbd('0xb1'))[_0x4fbd('0xb2')](function(){_0x24e69d[_0x4fbd('0xb0')]($(this)[_0x4fbd('0xb3')]('name'));});if($[_0x4fbd('0xf')](_0x4fbd('0x3d'))!==_0x24e69d[_0x4fbd('0xb4')]('\x20')){$[_0x4fbd('0xf')]('categories',_0x24e69d[_0x4fbd('0xb4')]('\x20'),{'expires':0x16d});};var _0x1d9d1e=$(_0x4fbd('0xb5'))[_0x4fbd('0x5c')]()/0x2;var _0x1ed97d=$('#minimap')['height']()/0x2;var _0x3542ed=[];var _0x3ca71b=templateList[_0x12dc8e]['x'];var _0x45d271=templateList[_0x12dc8e]['y'];var _0x5aae4d=_0x3ca71b+templateList[_0x12dc8e][_0x4fbd('0x5c')];var _0x14ee3f=_0x45d271+templateList[_0x12dc8e]['height'];var _0xa9fb98=_0x3ca71b-hitzone;var _0x510313=_0x5aae4d+hitzone;var _0x56abe4=_0x45d271-hitzone;var _0x356faf=_0x14ee3f+hitzone;arrayAttempt[_0x4fbd('0xb0')](curX['between'](_0xa9fb98,_0x510313)&&curY[_0x4fbd('0x1')](_0x356faf,_0x56abe4)&&_0x24e69d[_0x4fbd('0xb6')](_0x588f75=>templateList[_0x12dc8e]['categories'][_0x4fbd('0xaf')](_0x588f75)));if(curX[_0x4fbd('0x1')](_0xa9fb98,_0x510313)&&curY[_0x4fbd('0x1')](_0x356faf,_0x56abe4)&&_0x24e69d['some'](_0xea046d=>templateList[_0x12dc8e][_0x4fbd('0x3d')][_0x4fbd('0xaf')](_0xea046d))){attempt=0x0;$(_0x4fbd('0x16'))[_0x4fbd('0xaa')](_0x4fbd('0x77'));console[_0x4fbd('0x1d')](_0x4fbd('0xb7'),_0x12dc8e);drawImage(_minimap,_0x12dc8e,_0x3ca71b-curX,_0x45d271-curY,templateList[_0x12dc8e]['width'],templateList[_0x12dc8e]['height']);}}};if(!arrayAttempt[_0x4fbd('0xaf')](!![])){if(attempt<0x3){attempt++;}else{$(_0x4fbd('0x16'))[_0x4fbd('0x2e')](_0x4fbd('0x77'));}}}function setupCanvas(){minimap=$(_0x4fbd('0xb5'))[_0x4fbd('0xb8')](0x0);_minimap=minimap[_0x4fbd('0xb9')]('2d');_minimap[_0x4fbd('0xba')]=![];_minimap[_0x4fbd('0xbb')]=![];_minimap[_0x4fbd('0xbc')]=![];minimap_grid=$(_0x4fbd('0xbd'))[_0x4fbd('0xb8')](0x0);_minimap_grid=minimap_grid['getContext']('2d');_minimap_grid[_0x4fbd('0xba')]=![];_minimap_grid[_0x4fbd('0xbb')]=![];_0x2dba73:_minimap_grid[_0x4fbd('0xbc')]=![];minimap_cursor=$('#minimap-cursor')['get'](0x0);_minimap_cursor=minimap_cursor[_0x4fbd('0xb9')]('2d');_minimap_cursor[_0x4fbd('0xba')]=![];_minimap_cursor[_0x4fbd('0xbb')]=![];_minimap_cursor[_0x4fbd('0xbc')]=![];}function selectColor(_0x32a0b8,_0x372e9a,_0x9631fa,_0x2dcb9e,_0x44fc15){var _0x55b24a=_0x32a0b8[_0x4fbd('0xbe')](_0x372e9a,_0x9631fa,_0x2dcb9e,_0x44fc15)[_0x4fbd('0xbf')];var _0xe45e4a=''+_0x55b24a[0x0]+',\x20'+_0x55b24a[0x1]+',\x20'+_0x55b24a[0x2]+'';return _0xe45e4a;}
+Number['prototype']['between'] = function(_0x9fa6x1, _0x9fa6x2) {
+    var _0x9fa6x3 = Math['min']['apply'](Math, [_0x9fa6x1, _0x9fa6x2]),
+        _0x9fa6x4 = Math['max']['apply'](Math, [_0x9fa6x1, _0x9fa6x2]);
+    return this > _0x9fa6x3 && this < _0x9fa6x4
+};
+dataUrl = 'https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/';
+$('head')['append']('<link rel=\'stylesheet\' href=\'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css\' type=\'text/css\' media=\'screen\'>');
+$('head')['append']($('<style>h2.title { margin:0px auto; padding:10px; }\x0D\x0A.moveUp {position:absolute; bottom:6em; left:0.3333em;}\x0D\x0A.groupUp { bottom: initial !important; left: initial !important; position: initial !important; display: inline-block !important;}\x0D\x0A.colorsLeft {margin-left:0.333em !important;}\x0D\x0A.close { color:black; position:absolute; top:0.8em; right:1em; cursor:pointer; }\x0D\x0A.discord { color:black; position:absolute; top:0.75em; right:2.55em; cursor:pointer; }\x0D\x0A.smooth { overflow:auto; padding-top:4px; padding-bottom:4px; }\x0D\x0A.settings-list { margin:2px; text-shadow:1px 1px 8px white; position:relative; list-style-type:none; padding:0; display:table; width:99%;}\x0D\x0A.settings-list li:nth-child(odd) { background:linear-gradient(to right, rgba(228,228,228,0.65), rgba(0,0,0,0)); }\x0D\x0A.settings-button { right:0.5em; } .small{font-size:12px;} .smalltext{font-size:10px; width:120px;}\x0D\x0A.SettingsCss { width:280px; height:400px; display:none; border:3px solid rgba(34,34,34,0.75); overflow:hidden; background-color:rgba(255,255,255,0.95); position:absolute; top:-10%; bottom:0; left:0; right:0; margin:auto; }\x0D\x0A.GotoCss { width:280px; height:110px; display:none; border:3px solid rgba(34,34,34,0.75); overflow:hidden; background-color:rgba(255,255,255,0.95); position:absolute; top:-20%; bottom:0; left:0; right:0; margin:auto; }\x0D\x0A#minimap-backup {background-color:rgba(0,0,0,0.75); height:50px; border-radius:5px; position:absolute; right:1em; bottom:1em;}\x0D\x0A#minimap-content {background-color:rgba(0,0,0,0.75); width:480px; height:270px; border-radius:5px; position:absolute; right:1em; bottom:1em; outline: 4px solid white;}\x0D\x0A.fleft {float:left;} .fright {float:right;}\x0D\x0A.minimize { opacity: 0.45; filter: alpha(opacity=45); /* For IE8 and earlier */ }\x0D\x0A#minimap-settings { z-index:6; position:absolute; right:0em; bottom:0; width:480px; background-color:rgba(0,0,0,0.5);}\x0D\x0A#minimap {width:100%; top:0; height:100%; z-index:0; outline: 4px solid black!important; outline-offset: -2px;} #minimap-grid {width:100%; top:0; height:100%; z-index:1;} #minimap-cursor {width:100%; top:0; height:100%; z-index:2;}\x0D\x0A.clickable { cursor:pointer; font-weight:bold; }\x0D\x0Aul.toolbar { justify-content: space-around; white-space:nowrap;  display:-webkit-flex; -webkit-justify-content:center; display:flex; justify-content:center; z-index:6; position:relative !important; line-height:25px; list-style-type:none; margin:0; border-style:none; overflow:hidden; text-align:center; color:white; }\x0D\x0Ali.toolbar { z-index:6; float:left; } li.padding { padding-left:20px; } li.smallPadding { padding-left:4px; }\x0D\x0A.ui-slider .ui-slider-handle { width:1em !important; }\x0D\x0A.footer { font-size:8px; position:absolute; bottom:.5em; text-align:center; }\x0D\x0A.slider { right:0em !important; width:6.25em !important; }\x0D\x0A#config-categorie { height:50px;width:275px;border:1px solid #ccc; overflow:auto; font-size: 14px; }\x0D\x0A#BoxedSettings { height:180px;width:275px;border:1px solid #ccc; overflow:auto; font-size: 14px; }\x0D\x0A#i1, #i2, #i3 { text-align: center; display:inline-block; width: 33.3%; }\x0D\x0A#custom-slider-cursor { width: 1em !important; font-size:12px; position:relative !important; height: 1.25em; top: 50%; margin-top: -.75em; text-align: center; line-height: 1.6em !important; }\x0D\x0A#custom-slider-grid { width: 1em !important; font-size:12px; position:relative !important; height: 1.25em; top: 50%; margin-top: -.75em; text-align: center; line-height: 1.6em !important; }\x0D\x0Acanvas { position:absolute; image-rendering:optimizeSpeed; image-rendering:-moz-crisp-edges; image-rendering:-webkit-optimize-contrast; image-rendering:-o-crisp-edges; image-rendering:optimize-contrast; -ms-interpolation-mode:nearest-neighbor; }\x0D\x0A.menu-text { display:inline; }\x0D\x0A.CookiesButton { float:right; background-color:DarkGreen; color:white; font-weight:bold; cursor:pointer; border-color:DarkGreen; font-size: 14px !important; }\x0D\x0A.CookiesButton:hover { float:right; background-color:DarkGreen !important; color:white; font-weight:bold; cursor:pointer; border-color:lime !important; font-size: 14px !important; }\x0D\x0Aspan.cookiesAndMilk { color:white; float:left; padding-top:5px; display:block; margin-left:.5em; font-size: 13px; }</style>'));
+minimapHTML = '\x0D\x0A<div id="goto" class="GotoCss">\x0D\x0A  <h2 class="title"> Goto template </h2>\x0D\x0A  <div id="close-goto" class="close"><i class="fas fa-window-close"></i></div>\x0D\x0A  <div class="ui-widget" style="padding:5px;">\x0D\x0A    <label for="inputName">Template name: </label>\x0D\x0A    <input id="inputName">\x0D\x0A    <button id="enter-goto" class="ui-button ui-widget ui-corner-all">GO!</button>\x0D\x0A  </div>\x0D\x0A</div>\x0D\x0A<div id="settings" class="SettingsCss">\x0D\x0A   <h2 class="title"> Settings </h2>\x0D\x0A   <div id="discord-link" class="discord"><small><u>Join Discord</u></small> <i class="fab fa-discord"></i></div>\x0D\x0A   <div id="close-settings" class="close"><i class="fas fa-window-close"></i></div>\x0D\x0A   <ul class="settings-list">\x0D\x0A\x0D\x0A      <!-- CATEGORIE  -->\x0D\x0A      <li class="smooth"><div class="fleft small">Template categorie(s): </div>\x0D\x0A      <div id="config-categorie"></div></li>\x0D\x0A\x0D\x0A     <div id="BoxedSettings">\x0D\x0A        <!-- HIDE ZOOM -->\x0D\x0A        <li class="smooth"><div class="fleft small">Hide zoom slider</div>\x0D\x0A          <div id="config-hidezoom" class="fright clickable settings-button">Hide</div>\x0D\x0A        </li>\x0D\x0A\x0D\x0A        <!-- HIDE CURSOR  -->\x0D\x0A        <li class="smooth"><div class="fleft small">Hide cursor</div>\x0D\x0A          <div id="config-hidecursor" class="fright clickable settings-button">Hide</div>\x0D\x0A        </li>\x0D\x0A\x0D\x0A        <!-- HIDE GRID  -->\x0D\x0A        <li class="smooth"><div class="fleft small">Hide grid</div>\x0D\x0A          <div id="config-hidegrid" class="fright clickable settings-button">Hide</div>\x0D\x0A        </li>\x0D\x0A\x0D\x0A        <!-- PLACE PALLET -->\x0D\x0A        <li class="smooth"><div class="fleft small">Place palette</div>\x0D\x0A          <div id="config-centerpallet" class="fright clickable settings-button">Center</div>\x0D\x0A        </li>\x0D\x0A\x0D\x0A        <!-- DISPLAY TEXT  -->\x0D\x0A        <li class="smooth"><div class="fleft small">Display text</div><div id="config-displaytext" class="fright settings-button">\x0D\x0A        <select id="config-text" class="fright">\x0D\x0A          <option>Icons and Text</option>\x0D\x0A          <option>Text only</option>\x0D\x0A          <option>Icons only</option>\x0D\x0A        </select>\x0D\x0A        </div></li>\x0D\x0A\x0D\x0A        <!-- CURSOR COLOR  -->\x0D\x0A        <li class="smooth" style="padding-bottom:0.5em;"><div class="fleft small">Cursor color</div><div id="config-cursorcolor" class="fright settings-button">\x0D\x0A          <select runat="server" id="CursorColor" style="min-width:105px;">\x0D\x0A            <option value="NAVY" style="background-color: #001f3f;" />\x0D\x0A            <option value="BLUE" style="background-color: #0074D9;" />\x0D\x0A            <option value="AQUA" style="background-color: #7FDBFF;" />\x0D\x0A            <option value="TEAL" style="background-color: #39CCCC;" />\x0D\x0A            <option value="OLIVE" style="background-color: #3D9970;" />\x0D\x0A            <option value="GREEN" style="background-color: #2ECC40;" />\x0D\x0A            <option value="LIME" style="background-color: #01FF70;" />\x0D\x0A            <option value="YELLOW" style="background-color: #FFDC00;" />\x0D\x0A            <option value="ORANGE" style="background-color: #FF851B;" />\x0D\x0A            <option value="RED" style="background-color: #FF4136;" />\x0D\x0A            <option value="MAROON" style="background-color: #85144b;" />\x0D\x0A            <option value="FUCHSIA" style="background-color: #F012BE;" />\x0D\x0A            <option value="PURPLE" style="background-color: #B10DC9;" />\x0D\x0A            <option value="BLACK" style="background-color: #111111;" />\x0D\x0A            <option value="GRAY" style="background-color: #AAAAAA;" />\x0D\x0A            <option value="SILVER" style="background-color: #DDDDDD;" />\x0D\x0A          </select>\x0D\x0A        </div></li>\x0D\x0A\x0D\x0A        <!-- SLIDER CURSOR  -->\x0D\x0A        <li class="smooth"><div class="fleft small">Cursor transparency</div><div id="config-cursoralpha" class="fright settings-button">\x0D\x0A          <div id="slider-cursor" class="slider"><div id="custom-slider-cursor" class="ui-slider-handle"></div></div>\x0D\x0A        </div></li>\x0D\x0A\x0D\x0A        <!-- SLIDER GRID  -->\x0D\x0A        <li class="smooth"><div class="fleft small">Grid transparency</div><div id="config-gridalpha" class="fright settings-button">\x0D\x0A          <div id="slider-grid" class="slider"><div id="custom-slider-grid" class="ui-slider-handle"></div></div>\x0D\x0A        </div></li>\x0D\x0A    </div>\x0D\x0A\x0D\x0A     <li style="padding:3px"><!-- SPACE --></li>\x0D\x0A\x0D\x0A     <!-- RESET BUTTON -->\x0D\x0A     <li class="smooth">\x0D\x0A       <div id="config-reset" class="fright clickable settings-button">Reset settings</div>\x0D\x0A     </li>\x0D\x0A   </ul>\x0D\x0A\x0D\x0A   <div class="footer"><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0; float:left; margin-top:10px; margin-left:5px;" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</div>\x0D\x0A</div>\x0D\x0A<div id="minimap-backup" style="display:none"><span class="clickable" style="color:white; display:block;padding: 15px 20px;"> <i class="fas fa-eye menu-icon"></i> <div class="menu-text"> Open minimap </div> </span></div>\x0D\x0A<div id="minimap-content">\x0D\x0A   <div id="slider-vertical" style="height:200px; width:0.5em; position:absolute; top:1em; right:1em; opacity:0.45; z-index:9;"></div>\x0D\x0A   <canvas id="minimap" width="1024" height="540"></canvas>\x0D\x0A   <canvas id="minimap-grid" width="1024" height="540"></canvas>\x0D\x0A   <canvas id="minimap-cursor" width="1024" height="540"></canvas>\x0D\x0A<div id="minimap-settings" style="margin-left: -20px">\x0D\x0A  <ul class="toolbar">\x0D\x0A      <div id="i1"> <li class="toolbar clickable" id="hide-map"> <i class="fas fa-eye-slash menu-icon"></i> <div class="menu-text"> Hide minimap </div> </li> </div>\x0D\x0A      <div id="i2"> <li class="toolbar clickable" id="open-goto"> <i class="fas fa-chevron-circle-up menu-icon"></i> <div class="menu-text"> Goto template </div> </li> </div>\x0D\x0A      <div id="i3"> <li class="toolbar clickable" id="open-settings"> <i class="fas fa-cog menu-icon"></i> <div class="menu-text"> Settings </div> </li> </div>\x0D\x0A  </ul>\x0D\x0A</div>\x0D\x0A</div>';
+cookieHTML = '\x0D\x0A<div id="CookieBar" style="z-index:999; position:absolute; background-color:black; right:0; top:0; width:480px;">\x0D\x0A  <span class="cookiesAndMilk">We use cookies and milk to keep track your settings.</span>\x0D\x0A  <button id="CookiesOk" class="CookiesButton ui-button ui-widget ui-corner-all">I Understand!</button>\x0D\x0A</div>';
+var attempt = 0;
+var curX = null;
+var curY = null;
+var _zoom = 35;
+var max_zoom = 60;
+var FinalZoom = calcZoom(Math['pow'](1.1, _zoom));
+var templateList = [];
+var categorieList = [];
+var storedTemplates = {};
+var cursorColor = '#001f3f';
+var cursorAlpha = 90;
+var gridAlpha = 50;
+var showSlider = true;
+var showCursor = true;
+var showGrid = true;
+var textDisplay = 0;
+var centerPallet = true;
+var availableFactions = [];
+var hitzone = 0;
+$(document)['ready'](function() {
+    'use strict';
+    loadJsonLoop();
+    loadTemplates();
+    $('div#app')['children']()['append'](minimapHTML);
+    if ($['cookie']('WeUseCookies') === '0' || (typeof $['cookie']('WeUseCookies') === 'undefined')) {
+        $('div#minimap-content')['append'](cookieHTML)
+    };
+    setupCookies();
+    setupCanvas();
+    setupEvents();
+    $('#slider-vertical')['slider']('value', _zoom)
+});
+
+function setupCookies() {
+    if (typeof $['cookie']('showMinimap') === 'undefined') {
+        $['cookie']('showMinimap', 'true', {
+            expires: 365
+        })
+    } else {
+        if ($['cookie']('showMinimap') === 'false') {
+            $('#minimap-content')['hide']();
+            $('#minimap-backup')['show']()
+        }
+    };
+    if (typeof $['cookie']('cursorColor') === 'undefined') {
+        getCursorColor('NAVY', true)
+    } else {
+        console['log'](getCursorColor($['cookie']('cursorColor')));
+        getCursorColor($['cookie']('cursorColor'))
+    };
+    if (typeof $['cookie']('WeUseCookies') === 'undefined') {
+        $['cookie']('WeUseCookies', 0, {
+            expires: 365
+        })
+    };
+    if (typeof $['cookie']('cursorAlpha') === 'undefined') {
+        $['cookie']('cursorAlpha', cursorAlpha, {
+            expires: 365
+        })
+    } else {
+        cursorAlpha = $['cookie']('cursorAlpha')
+    };
+    if (typeof $['cookie']('gridAlpha') === 'undefined') {
+        $['cookie']('gridAlpha', gridAlpha, {
+            expires: 365
+        })
+    } else {
+        gridAlpha = $['cookie']('gridAlpha')
+    };
+    if (typeof $['cookie']('showSlider') === 'undefined') {
+        $['cookie']('showSlider', 'true', {
+            expires: 365
+        })
+    } else {
+        showSlider = $['cookie']('showSlider') === 'true' ? true : false;
+        $('#config-hidezoom')['text']((!showSlider ? 'Show' : 'Hide'));
+        if (showSlider) {
+            $('#slider-vertical')['show']()
+        } else {
+            $('#slider-vertical')['hide']()
+        }
+    };
+    if (typeof $['cookie']('showCursor') === 'undefined') {
+        $['cookie']('showCursor', 'true', {
+            expires: 365
+        })
+    } else {
+        showCursor = $['cookie']('showCursor') === 'true' ? true : false;
+        $('#config-hidecursor')['text']((!showCursor ? 'Show' : 'Hide'))
+    };
+    if (typeof $['cookie']('showGrid') === 'undefined') {
+        $['cookie']('showGrid', 'true', {
+            expires: 365
+        })
+    } else {
+        showGrid = $['cookie']('showGrid') === 'true' ? true : false;
+        $('#config-hidegrid')['text']((!showGrid ? 'Show' : 'Hide'))
+    };
+    if (typeof $['cookie']('centerPallet') === 'undefined') {
+        $['cookie']('centerPallet', 'true', {
+            expires: 365
+        })
+    } else {
+        centerPallet = $['cookie']('centerPallet') === 'true' ? true : false;
+        $('#config-centerpallet')['text']((!centerPallet ? 'Center' : 'Left'));
+        if (!centerPallet) {
+            $('div#colors')['addClass']('colorsLeft');
+            $('#app > div:nth-child(1) > div:nth-child(9)')['addClass']('moveUp');
+            $('#app > div:nth-child(1) > div:nth-child(9) > div:nth-child(2)')['addClass']('groupUp');
+            $('#app > div:nth-child(1) > div:nth-child(9) > div:nth-child(1)')['addClass']('groupUp')
+        }
+    };
+    if (typeof $['cookie']('textDisplay') === 'undefined') {
+        $['cookie']('textDisplay', textDisplay, {
+            expires: 365
+        })
+    } else {
+        textDisplay = $['cookie']('textDisplay');
+        $('#config-text')['prop']('selectedIndex', textDisplay);
+        _displayText = $('#config-text option:selected')['text']();
+        if (_displayText === 'Icons and Text') {
+            textDisplay = 0;
+            $['cookie']('textDisplay', 0, {
+                expires: 365
+            });
+            $('.menu-text')['show']();
+            $('.menu-icon')['show']()
+        } else {
+            if (_displayText === 'Text only') {
+                textDisplay = 1;
+                $['cookie']('textDisplay', 1, {
+                    expires: 365
+                });
+                $('.menu-text')['show']();
+                $('.menu-icon')['hide']()
+            } else {
+                if (_displayText === 'Icons only') {
+                    textDisplay = 2;
+                    $['cookie']('textDisplay', 2, {
+                        expires: 365
+                    });
+                    $('.menu-text')['hide']();
+                    $('.menu-icon')['show']()
+                }
+            }
+        }
+    };
+    if (typeof $['cookie']('zoom') === 'undefined') {
+        $['cookie']('zoom', _zoom, {
+            expires: 365
+        })
+    } else {
+        _zoom = $['cookie']('zoom');
+        FinalZoom = calcZoom(Math['pow'](1.1, _zoom))
+    };
+    if (typeof $['cookie']('categories') === 'undefined') {
+        $['cookie']('categories', '', {
+            expires: 365
+        })
+    } else {
+        var _0x9fa6x19 = $['cookie']('categories')['split'](' ');
+        console['log'](('Checked categories: ' + _0x9fa6x19 + ', Cookie: ' + ($['cookie']('categories')) + ', '));
+        _url = dataUrl + '!data.json';
+        $['ajax']({
+            type: 'GET',
+            url: _url,
+            dataType: 'json',
+            success: function(_0x9fa6x1a) {
+                categories = jQuery['parseJSON'](JSON['stringify'](_0x9fa6x1a))['Categories'];
+                categories['sort']();
+                for (var _0x9fa6x1b = 0; _0x9fa6x1b < categories['length']; _0x9fa6x1b++) {
+                    $('#config-categorie')['append'](('<label><input type="checkbox" name="' + (categories[_0x9fa6x1b][1]) + '" ' + ($['inArray'](categories[_0x9fa6x1b][1], _0x9fa6x19) > -1 ? 'checked=true' : '') + ' id="check-' + (categories[_0x9fa6x1b][1]) + '">' + (categories[_0x9fa6x1b][0]) + '</label>'))
+                }
+            }
+        })
+    };
+    console['log'](('' + ($['cookie']('cursorAlpha')) + ' ' + ($['cookie']('gridAlpha')) + ' ' + ($['cookie']('showCursor')) + ' ' + ($['cookie']('showGrid')) + ' ' + ($['cookie']('textDisplay')) + ' ' + ($['cookie']('zoom')) + ''))
+}
+
+function setupEvents() {
+    $('#CursorColor')['change'](function() {
+        getCursorColor($(this)['val'](), true)
+    });
+    $('#CookiesOk')['click'](function() {
+        $['cookie']('WeUseCookies', 1, {
+            expires: 365
+        });
+        $('#CookieBar')['slideUp'](100)
+    });
+    $('#discord-link')['click'](function() {
+        window['open']('https://discord.io/pixelatlas', '_blank')
+    });
+    $('#inputName')['autocomplete']({
+        source: availableFactions
+    });
+    $('#enter-goto')['click'](function() {
+        inputTxt = $('#inputName')['val']();
+        if (templateList['hasOwnProperty'](inputTxt)) {
+            var _0x9fa6x1d = Math['round'](templateList[inputTxt]['x'] + (templateList[inputTxt]['width'] / 2));
+            var _0x9fa6x1e = Math['round'](templateList[inputTxt]['y'] + (templateList[inputTxt]['height'] / 2));
+            window['location']['replace'](('http://pixelcanvas.io/@' + _0x9fa6x1d + ',' + _0x9fa6x1e + ''))
+        }
+    });
+    $('#inputName')['keypress'](function(_0x9fa6x1f) {
+        if (_0x9fa6x1f['which'] == 13) {
+            inputTxt = $('#inputName')['val']();
+            if (templateList['hasOwnProperty'](inputTxt)) {
+                var _0x9fa6x1d = Math['round'](templateList[inputTxt]['x'] + (templateList[inputTxt]['width'] / 2));
+                var _0x9fa6x1e = Math['round'](templateList[inputTxt]['y'] + (templateList[inputTxt]['height'] / 2));
+                window['location']['replace'](('http://pixelcanvas.io/@' + _0x9fa6x1d + ',' + _0x9fa6x1e + ''))
+            }
+        }
+    });
+    $('#open-goto')['click'](function() {
+        var _0x9fa6x20 = $('#goto');
+        var _0x9fa6x21 = $('.GotoCss:visible');
+        if (_0x9fa6x21['length'] > 0) {
+            $('.GotoCss:visible')['slideUp'](500);
+            return
+        };
+        VisibleBoxies();
+        _0x9fa6x20['slideDown'](500)
+    });
+    var _0x9fa6x22 = $('#custom-slider-cursor');
+    $('#slider-cursor')['slider']({
+        range: 'min',
+        min: 0,
+        max: 100,
+        value: $['cookie']('cursorAlpha'),
+        create: function() {
+            val = $(this)['slider']('value');
+            _0x9fa6x22['text'](val);
+            cursorAlpha = parseInt(val);
+            $['cookie']('cursorAlpha', cursorAlpha, {
+                expires: 365
+            })
+        },
+        slide: function(_0x9fa6x1f, _0x9fa6x23) {
+            val = _0x9fa6x23['value'];
+            _0x9fa6x22['text'](_0x9fa6x23['value']);
+            cursorAlpha = parseInt(val);
+            $['cookie']('cursorAlpha', cursorAlpha, {
+                expires: 365
+            })
+        }
+    });
+    var _0x9fa6x24 = $('#custom-slider-grid');
+    $('#slider-grid')['slider']({
+        range: 'min',
+        min: 0,
+        max: 100,
+        value: $['cookie']('gridAlpha'),
+        create: function() {
+            val = $(this)['slider']('value');
+            _0x9fa6x24['text']($(this)['slider']('value'));
+            gridAlpha = parseInt(val);
+            $['cookie']('gridAlpha', gridAlpha, {
+                expires: 365
+            })
+        },
+        slide: function(_0x9fa6x1f, _0x9fa6x23) {
+            val = _0x9fa6x23['value'];
+            _0x9fa6x24['text'](_0x9fa6x23['value']);
+            gridAlpha = parseInt(val);
+            $['cookie']('gridAlpha', gridAlpha, {
+                expires: 365
+            })
+        }
+    });
+    $('#config-reset')['click'](function() {
+        if (window['confirm']('Are you sure?')) {
+            cursorAlpha = 90;
+            cursorColor = 'NAVY';
+            gridAlpha = 50;
+            showSlider = true;
+            showCursor = true;
+            showGrid = true;
+            textDisplay = 0;
+            _zoom = 30;
+            centerPallet = true;
+            _0x9fa6x22['text'](cursorAlpha);
+            _0x9fa6x24['text'](gridAlpha);
+            $['cookie']('cursorAlpha', cursorAlpha, {
+                expires: 365
+            });
+            $['cookie']('gridAlpha', gridAlpha, {
+                expires: 365
+            });
+            $['cookie']('showCursor', showCursor, {
+                expires: 365
+            });
+            $['cookie']('showGrid', showGrid, {
+                expires: 365
+            });
+            $['cookie']('textDisplay', textDisplay, {
+                expires: 365
+            });
+            $['cookie']('zoom', _zoom, {
+                expires: 365
+            });
+            $['cookie']('centerPallet', centerPallet, {
+                expires: 365
+            });
+            $['cookie']('categories', '', {
+                expires: 365
+            });
+            $['cookie']('cursorColor', 'NAVY', {
+                expires: 365
+            });
+            window['location']['reload']()
+        }
+    });
+    $('#config-text')['click'](function() {
+        _displayText = $('#config-text option:selected')['text']();
+        console['log'](_displayText);
+        if (_displayText === 'Icons and Text') {
+            textDisplay = 0;
+            $['cookie']('textDisplay', 0, {
+                expires: 365
+            });
+            $('.menu-text')['show']();
+            $('.menu-icon')['show']()
+        } else {
+            if (_displayText === 'Text only') {
+                textDisplay = 1;
+                $['cookie']('textDisplay', 1, {
+                    expires: 365
+                });
+                $('.menu-text')['show']();
+                $('.menu-icon')['hide']()
+            } else {
+                if (_displayText === 'Icons only') {
+                    textDisplay = 2;
+                    $['cookie']('textDisplay', 2, {
+                        expires: 365
+                    });
+                    $('.menu-text')['hide']();
+                    $('.menu-icon')['show']()
+                }
+            }
+        }
+    });
+    $('#config-hidecursor')['click'](function() {
+        showCursor = !showCursor;
+        $('#config-hidecursor')['text']((!showCursor ? 'Show' : 'Hide'));
+        $['cookie']('showCursor', showCursor, {
+            expires: 365
+        })
+    });
+    $('#config-hidegrid')['click'](function() {
+        showGrid = !showGrid;
+        $('#config-hidegrid')['text']((!showGrid ? 'Show' : 'Hide'));
+        $['cookie']('showGrid', showGrid, {
+            expires: 365
+        })
+    });
+    $('#config-hidezoom')['click'](function() {
+        showSlider = !showSlider;
+        $('#config-hidezoom')['text']((!showSlider ? 'Show' : 'Hide'));
+        if (showSlider) {
+            $('#slider-vertical')['show']()
+        } else {
+            $('#slider-vertical')['hide']()
+        };
+        $['cookie']('showSlider', showSlider, {
+            expires: 365
+        })
+    });
+    $('#config-centerpallet')['click'](function() {
+        centerPallet = !centerPallet;
+        $('#config-centerpallet')['text']((!centerPallet ? 'Center' : 'Left'));
+        $('div#colors')['toggleClass']('colorsLeft');
+        $('#app > div:nth-child(1) > div:nth-child(9)')['toggleClass']('moveUp');
+        $('#app > div:nth-child(1) > div:nth-child(9) > div:nth-child(2)')['toggleClass']('groupUp');
+        $('#app > div:nth-child(1) > div:nth-child(9) > div:nth-child(1)')['toggleClass']('groupUp');
+        $['cookie']('centerPallet', centerPallet, {
+            expires: 365
+        })
+    });
+    $('#slider-vertical')['slider']({
+        orientation: 'vertical',
+        range: 'min',
+        min: 10,
+        max: 60,
+        value: 30,
+        slide: function(_0x9fa6x1f, _0x9fa6x23) {
+            _zoom = _0x9fa6x23['value'];
+            FinalZoom = calcZoom(Math['pow'](1.1, _zoom));
+            $['cookie']('zoom', _zoom, {
+                expires: 365
+            })
+        }
+    });
+    $('#open-settings')['click'](function() {
+        var _0x9fa6x25 = $('#settings');
+        var _0x9fa6x21 = $('.SettingsCss:visible');
+        if (_0x9fa6x21['length'] > 0) {
+            $('.SettingsCss:visible')['slideUp'](500);
+            return
+        };
+        VisibleBoxies();
+        _0x9fa6x25['slideDown'](500)
+    });
+    $('#close-settings')['click'](function() {
+        var _0x9fa6x25 = $('#settings');
+        if (_0x9fa6x25['is'](':visible')) {
+            _0x9fa6x25['slideUp'](500);
+            return
+        };
+        var _0x9fa6x21 = $('.SettingsCss:visible');
+        if (_0x9fa6x21['length'] > 0) {
+            $('.SettingsCss:visible')['slideUp'](500)
+        }
+    });
+    $('#close-goto')['click'](function() {
+        var _0x9fa6x20 = $('#goto');
+        if (_0x9fa6x20['is'](':visible')) {
+            _0x9fa6x20['slideUp'](500);
+            return
+        };
+        var _0x9fa6x21 = $('.GotoCss:visible');
+        if (_0x9fa6x21['length'] > 0) {
+            $('.GotoCss:visible')['slideUp'](500)
+        }
+    });
+    $('#minimap-content')['mouseover'](function() {
+        if ($('#minimap-content')['hasClass']('minimize')) {
+            $('#minimap-content')['removeClass']('minimize')
+        }
+    });
+    $('#hide-map')['click'](function() {
+        $('#minimap-content')['hide']();
+        $('#minimap-backup')['show']();
+        $['cookie']('showMinimap', 'false', {
+            expires: 365
+        })
+    });
+    $('#minimap-backup')['click'](function() {
+        $('#minimap-content')['show']();
+        $('#minimap-backup')['hide']();
+        $['cookie']('showMinimap', 'true', {
+            expires: 365
+        })
+    });
+    $('#gameWindow')['mousemove'](function() {
+        var _0x9fa6x26 = $('div[style*="position: absolute; left: 1em; bottom: 1em;"]')[0]['innerText']['replace']('(', '')['replace'](')', '')['split'](',');
+        curX = parseInt(_0x9fa6x26[0]);
+        curY = parseInt(_0x9fa6x26[1]);
+        loadTemplates();
+        drawGrid();
+        drawCursor()
+    })
+}
+
+function getCursorColor(_0x9fa6x28, _0x9fa6x29 = false) {
+    switch (_0x9fa6x28) {
+        default:
+            ;
+        case 'NAVY': {
+            $('#CursorColor')['css']('background-color', '#001f3f');
+            if (_0x9fa6x29) {
+                $['cookie']('cursorColor', 'NAVY', {
+                    expires: 365
+                })
+            };
+            cursorColor = '#001f3f';
+            return '#001f3f'
+        }
+        break;
+    case 'BLUE': {
+        $('#CursorColor')['css']('background-color', '#0074D9');
+        if (_0x9fa6x29) {
+            $['cookie']('cursorColor', 'BLUE', {
+                expires: 365
+            })
+        };
+        cursorColor = '#0074D9';
+        return '#0074D9'
+    }
+    break;
+    case 'AQUA': {
+        $('#CursorColor')['css']('background-color', '#7FDBFF');
+        if (_0x9fa6x29) {
+            $['cookie']('cursorColor', 'AQUA', {
+                expires: 365
+            })
+        };
+        cursorColor = '#7FDBFF';
+        return '#7FDBFF'
+    }
+    break;
+    case 'TEAL': {
+        $('#CursorColor')['css']('background-color', '#39CCCC');
+        if (_0x9fa6x29) {
+            $['cookie']('cursorColor', 'TEAL', {
+                expires: 365
+            })
+        };
+        cursorColor = '#39CCCC';
+        return '#39CCCC'
+    }
+    break;
+    case 'OLIVE': {
+        $('#CursorColor')['css']('background-color', '#3D9970');
+        if (_0x9fa6x29) {
+            $['cookie']('cursorColor', 'OLIVE', {
+                expires: 365
+            })
+        };
+        cursorColor = '#3D9970';
+        return '#3D9970'
+    }
+    break;
+    case 'GREEN': {
+        $('#CursorColor')['css']('background-color', '#2ECC40');
+        if (_0x9fa6x29) {
+            $['cookie']('cursorColor', 'GREEN', {
+                expires: 365
+            })
+        };
+        cursorColor = '#2ECC40';
+        return '#2ECC40'
+    }
+    break;
+    case 'LIME': {
+        $('#CursorColor')['css']('background-color', '#01FF70');
+        if (_0x9fa6x29) {
+            $['cookie']('cursorColor', 'LIME', {
+                expires: 365
+            })
+        };
+        cursorColor = '#01FF70';
+        return '#01FF70'
+    }
+    break;
+    case 'YELLOW': {
+        $('#CursorColor')['css']('background-color', '#FFDC00');
+        if (_0x9fa6x29) {
+            $['cookie']('cursorColor', 'YELLOW', {
+                expires: 365
+            })
+        };
+        cursorColor = '#FFDC00';
+        return '#FFDC00'
+    }
+    break;
+    case 'ORANGE': {
+        $('#CursorColor')['css']('background-color', '#FF851B');
+        if (_0x9fa6x29) {
+            $['cookie']('cursorColor', 'ORANGE', {
+                expires: 365
+            })
+        };
+        cursorColor = '#FF851B';
+        return '#FF851B'
+    }
+    break;
+    case 'RED': {
+        $('#CursorColor')['css']('background-color', '#FF4136');
+        if (_0x9fa6x29) {
+            $['cookie']('cursorColor', 'RED', {
+                expires: 365
+            })
+        };
+        cursorColor = '#FF4136';
+        return '#FF4136'
+    }
+    break;
+    case 'MAROON': {
+        $('#CursorColor')['css']('background-color', '#85144b');
+        if (_0x9fa6x29) {
+            $['cookie']('cursorColor', 'MAROON', {
+                expires: 365
+            })
+        };
+        cursorColor = '#85144b';
+        return '#85144b'
+    }
+    break;
+    case 'FUCHSIA': {
+        $('#CursorColor')['css']('background-color', '#F012BE');
+        if (_0x9fa6x29) {
+            $['cookie']('cursorColor', 'FUCHSIA', {
+                expires: 365
+            })
+        };
+        cursorColor = '#F012BE';
+        return '#F012BE'
+    }
+    break;
+    case 'PURPLE': {
+        $('#CursorColor')['css']('background-color', '#B10DC9');
+        if (_0x9fa6x29) {
+            $['cookie']('cursorColor', 'PURPLE', {
+                expires: 365
+            })
+        };
+        cursorColor = '#B10DC9';
+        return '#B10DC9'
+    }
+    break;
+    case 'BLACK': {
+        $('#CursorColor')['css']('background-color', '#111111');
+        if (_0x9fa6x29) {
+            $['cookie']('cursorColor', 'BLACK', {
+                expires: 365
+            })
+        };
+        cursorColor = '#111111';
+        return '#111111'
+    }
+    break;
+    case 'GRAY': {
+        $('#CursorColor')['css']('background-color', '#AAAAAA');
+        if (_0x9fa6x29) {
+            $['cookie']('cursorColor', 'GRAY', {
+                expires: 365
+            })
+        };
+        cursorColor = '#AAAAAA';
+        return '#AAAAAA'
+    }
+    break;
+    case 'SILVER': {
+        $('#CursorColor')['css']('background-color', '#DDDDDD');
+        if (_0x9fa6x29) {
+            $['cookie']('cursorColor', 'SILVER', {
+                expires: 365
+            })
+        };
+        cursorColor = '#DDDDDD';
+        return '#DDDDDD'
+    }
+    break
+    }
+}
+
+function calcZoom(_0x9fa6x2b) {
+    return parseInt(Math['min'](max_zoom, Math['max'](1, _0x9fa6x2b)))
+}
+
+function isMenuVisible() {
+    return (!$('#minimap-backup')['is'](':visible') && $('#minimap-content')['is'](':visible'))
+}
+
+function VisibleBoxies() {
+    var _0x9fa6x25 = $('#settings');
+    if (_0x9fa6x25['is'](':visible')) {
+        _0x9fa6x25['slideUp'](500);
+        return
+    };
+    var _0x9fa6x20 = $('#goto');
+    if (_0x9fa6x20['is'](':visible')) {
+        _0x9fa6x20['slideUp'](500);
+        return
+    }
+}
+
+function loadJsonLoop() {
+    _url = dataUrl + '!data.json';
+    $['ajax']({
+        type: 'GET',
+        url: _url,
+        dataType: 'json',
+        success: function(_0x9fa6x1a) {
+            updateTemplates(jQuery['parseJSON'](JSON['stringify'](_0x9fa6x1a)).Templates)
+        }
+    });
+    setTimeout(loadJsonLoop, 60 * 60 * 60)
+}
+
+function hexToRgb(_0x9fa6x30) {
+    var _0x9fa6x31 = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i ['exec'](_0x9fa6x30);
+    return _0x9fa6x31 ? {
+        r: parseInt(_0x9fa6x31[1], 16),
+        g: parseInt(_0x9fa6x31[2], 16),
+        b: parseInt(_0x9fa6x31[3], 16)
+    } : null
+}
+
+function drawCursor() {
+    _minimap_cursor['clearRect'](0, 0, minimap['width'], minimap['height']);
+    if (!isMenuVisible() || !showCursor) {
+        return
+    };
+    _minimap_cursor['beginPath']();
+    var _0x9fa6x33 = minimap['width'] + FinalZoom;
+    var _0x9fa6x34 = minimap['height'] + FinalZoom;
+    var _0x9fa6x35 = (_0x9fa6x33 / 2);
+    var _0x9fa6x36 = (_0x9fa6x34 / 2);
+    var _0x9fa6x37 = hexToRgb(cursorColor);
+    _minimap_cursor['lineWidth'] = parseInt(0.15 * FinalZoom);
+    _minimap_cursor['strokeStyle'] = ('rgba(' + (_0x9fa6x37['r']) + ', ' + (_0x9fa6x37['g']) + ', ' + (_0x9fa6x37['b']) + ', ' + ((cursorAlpha / 100)) + ')');
+    _minimap_cursor['rect'](_0x9fa6x35 - (FinalZoom / 2), _0x9fa6x36 - (FinalZoom / 2), FinalZoom, FinalZoom);
+    _minimap_cursor['stroke']()
+}
+
+function drawGrid() {
+    var _0x9fa6x39 = 0;
+    _minimap_grid['clearRect'](0, 0, minimap['width'], minimap['height']);
+    if (!isMenuVisible() || !showGrid || FinalZoom < 17) {
+        var _0x9fa6x33 = minimap['width'] + FinalZoom;
+        for (var _0x9fa6x1d = 0; _0x9fa6x1d <= _0x9fa6x33; _0x9fa6x1d += FinalZoom) {
+            _0x9fa6x39 += 1
+        }
+    } else {
+        _minimap_grid['beginPath']();
+        var _0x9fa6x33 = minimap['width'] + FinalZoom;
+        var _0x9fa6x34 = minimap['height'] + FinalZoom;
+        var _0x9fa6x35 = (minimap['width'] / 2) % FinalZoom - FinalZoom;
+        var _0x9fa6x36 = (minimap['height'] / 2) % FinalZoom - FinalZoom;
+        console['log'](('Drawing grid board = [' + _0x9fa6x33 + ', ' + _0x9fa6x34 + '] and offset = [' + _0x9fa6x35 + ', ' + _0x9fa6x36 + ']'));
+        _minimap_grid['fillStyle'] = ('rgba(34, 34, 34, ' + ((gridAlpha / 100)) + ')');
+        var _0x9fa6x3a = 1;
+        var _0x9fa6x3b = (_0x9fa6x3a % 2) / 2;
+        _minimap_grid['translate'](_0x9fa6x3b, 0);
+        for (var _0x9fa6x1d = 0; _0x9fa6x1d <= _0x9fa6x33; _0x9fa6x1d += FinalZoom) {
+            _0x9fa6x39 += 1;
+            _minimap_grid['fillRect'](_0x9fa6x1d + _0x9fa6x35, _0x9fa6x36, _0x9fa6x3a, _0x9fa6x34)
+        };
+        _minimap_grid['translate'](-_0x9fa6x3b, 0);
+        _minimap_grid['translate'](0, _0x9fa6x3b);
+        for (var _0x9fa6x1e = 0; _0x9fa6x1e <= _0x9fa6x34; _0x9fa6x1e += FinalZoom) {
+            _minimap_grid['fillRect'](_0x9fa6x35, _0x9fa6x1e + _0x9fa6x36, _0x9fa6x33, _0x9fa6x3a)
+        };
+        _minimap_grid['translate'](0, -_0x9fa6x3b);
+        _minimap_grid['stroke']()
+    };
+    hitzone = _0x9fa6x39;
+    console['log']('Hitzone', hitzone)
+}
+
+function drawImage(_0x9fa6x3d, _0x9fa6x3e, _0x9fa6x3f, _0x9fa6x40, _0x9fa6x41, _0x9fa6x42) {
+    attempt = 0;
+    $('#minimap-content')['removeClass']('minimize');
+    var _0x9fa6x43 = minimap['width'] / FinalZoom / 2;
+    var _0x9fa6x44 = minimap['height'] / FinalZoom / 2;
+    var _0x9fa6x45 = (_0x9fa6x43 + _0x9fa6x3f) * FinalZoom;
+    var _0x9fa6x46 = (_0x9fa6x44 + _0x9fa6x40) * FinalZoom;
+    var _0x9fa6x47 = FinalZoom * _0x9fa6x41;
+    var _0x9fa6x48 = FinalZoom * _0x9fa6x42;
+    console['log'](('x: ' + _0x9fa6x3f + ' y: ' + _0x9fa6x40 + ' W: ' + _0x9fa6x41 + ' H: ' + _0x9fa6x42 + ' | z: (' + FinalZoom + ') (' + _zoom + ')'));
+    if (storedTemplates['hasOwnProperty'](_0x9fa6x3e)) {
+        _0x9fa6x3d['drawImage'](storedTemplates[_0x9fa6x3e], _0x9fa6x45, _0x9fa6x46, _0x9fa6x47, _0x9fa6x48)
+    } else {
+        var _0x9fa6x49 = new Image();
+        _0x9fa6x49['src'] = dataUrl + _0x9fa6x3e + '.png';
+        _0x9fa6x49['onload'] = function() {
+            _0x9fa6x3d['drawImage'](_0x9fa6x49, _0x9fa6x45, _0x9fa6x46, _0x9fa6x47, _0x9fa6x48);
+            storedTemplates[_0x9fa6x3e] = _0x9fa6x49
+        }
+    }
+}
+
+function updateTemplates(_0x9fa6x4b) {
+    templateList = _0x9fa6x4b;
+    for (var _0x9fa6x4c in _0x9fa6x4b) {
+        if (!availableFactions['includes'](_0x9fa6x4c)) {
+            availableFactions['push'](_0x9fa6x4c)
+        }
+    }
+}
+
+function loadTemplates() {
+    arrayAttempt = [];
+    if (!isMenuVisible()) {
+        return
+    };
+    _minimap['clearRect'](0, 0, minimap['width'], minimap['height']);
+    for (var _0x9fa6x4e in templateList) {
+        if (templateList['hasOwnProperty'](_0x9fa6x4e)) {
+            var _0x9fa6x4f = [];
+            $('#config-categorie input:checked')['each'](function() {
+                _0x9fa6x4f['push']($(this)['attr']('name'))
+            });
+            if ($['cookie']('categories') !== _0x9fa6x4f['join'](' ')) {
+                $['cookie']('categories', _0x9fa6x4f['join'](' '), {
+                    expires: 365
+                })
+            };
+            var _0x9fa6x50 = $('#minimap')['width']() / 2;
+            var _0x9fa6x51 = $('#minimap')['height']() / 2;
+            var _0x9fa6x52 = [];
+            var _0x9fa6x53 = templateList[_0x9fa6x4e]['x'];
+            var _0x9fa6x54 = templateList[_0x9fa6x4e]['y'];
+            var _0x9fa6x55 = _0x9fa6x53 + templateList[_0x9fa6x4e]['width'];
+            var _0x9fa6x56 = _0x9fa6x54 + templateList[_0x9fa6x4e]['height'];
+            var _0x9fa6x57 = _0x9fa6x53 - hitzone;
+            var _0x9fa6x58 = _0x9fa6x55 + hitzone;
+            var _0x9fa6x59 = _0x9fa6x54 - hitzone;
+            var _0x9fa6x5a = _0x9fa6x56 + hitzone;
+            arrayAttempt['push']((curX['between'](_0x9fa6x57, _0x9fa6x58) && curY['between'](_0x9fa6x5a, _0x9fa6x59) && _0x9fa6x4f['some']((_0x9fa6x5b) => templateList[_0x9fa6x4e]['categories']['includes'](_0x9fa6x5b))));
+            if (curX['between'](_0x9fa6x57, _0x9fa6x58) && curY['between'](_0x9fa6x5a, _0x9fa6x59) && _0x9fa6x4f['some']((_0x9fa6x5b) => templateList[_0x9fa6x4e]['categories']['includes'](_0x9fa6x5b))) {
+                attempt = 0;
+                $('#minimap-content')['removeClass']('minimize');
+                console['log']('Drawing', _0x9fa6x4e);
+                drawImage(_minimap, _0x9fa6x4e, (_0x9fa6x53 - curX), (_0x9fa6x54 - curY), templateList[_0x9fa6x4e]['width'], templateList[_0x9fa6x4e]['height'])
+            }
+        }
+    };
+    if (!arrayAttempt['includes'](true)) {
+        if (attempt < 3) {
+            attempt++
+        } else {
+            $('#minimap-content')['addClass']('minimize')
+        }
+    }
+}
+
+function setupCanvas() {
+    minimap = $('#minimap')['get'](0);
+    _minimap = minimap['getContext']('2d');
+    _minimap['imageSmoothingEnabled'] = false;
+    _minimap['webkitImageSmoothingEnabled'] = false;
+    _minimap['mozImageSmoothingEnabled'] = false;
+    minimap_grid = $('#minimap-grid')['get'](0);
+    _minimap_grid = minimap_grid['getContext']('2d');
+    _minimap_grid['imageSmoothingEnabled'] = false;
+    _minimap_grid['webkitImageSmoothingEnabled'] = false;https://i.imgur.com/vsa5OtO.png
+    _minimap_grid['mozImageSmoothingEnabled'] = false;
+    minimap_cursor = $('#minimap-cursor')['get'](0);
+    _minimap_cursor = minimap_cursor['getContext']('2d');
+    _minimap_cursor['imageSmoothingEnabled'] = false;
+    _minimap_cursor['webkitImageSmoothingEnabled'] = false;
+    _minimap_cursor['mozImageSmoothingEnabled'] = false
+}
+
+function selectColor(_0x9fa6x3d, _0x9fa6x5e, _0x9fa6x5f, _0x9fa6x60, _0x9fa6x61) {
+    var _0x9fa6x62 = _0x9fa6x3d['getImageData'](_0x9fa6x5e, _0x9fa6x5f, _0x9fa6x60, _0x9fa6x61)['data'];
+    var _0x9fa6x63 = ('' + (_0x9fa6x62[0]) + ', ' + (_0x9fa6x62[1]) + ', ' + (_0x9fa6x62[2]) + '');
+    return _0x9fa6x63
+}
