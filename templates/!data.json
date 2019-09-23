@@ -195,14 +195,5 @@
 			"categories": ["misc"],
 			"aliases": ["H", "poop", "h", "miru"]
 		},
-                "FINESQUIRTLE": {
-                        "name": "FINESQUIRTLE.png",
-                        "x": -1225,
-                        "y": 3352,
-			"width": 44,
-			"height": 34,
-			"categories": ["misc"],
-			"aliases": ["squirtle"]
-                }
 	}
 }
