@@ -8,10 +8,10 @@
 	"Templates": {
                 "traaCenter": {
                         "name": "traaCenter.png",
-                        "x": -1260,
-                        "y": -812,
-                        "width": 426,
-                        "height": 390,   
+                        "x": -1341,
+                        "y": -897,
+                        "width": 507,
+                        "height": 475,   
                         "categories": ["pixeltraa"],
                         "aliases": ["traaCenter","stevonnie"] 
                 },
