@@ -17,9 +17,9 @@
                 },
 		"redmenace": {
 			"name": "redmenace.png",
-			"x": -3251,
+			"x": -3250,
 			"y": 2748,
-			"width": 2342,
+			"width": 2341,
 			"height": 1955,
 			"categories": ["redpixel"],
 			"aliases": ["redmenace", "red menace", "bixelgrad"]
