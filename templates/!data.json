@@ -177,6 +177,15 @@
 			"categories": ["redpixel"],
 			"aliases": ["ironcorpse", "iron", "corpse", "heatherheyer"]
 		},
+		"protracted": {
+			"name": "protracted.png",
+			"x": -1087,
+			"y": -30,
+			"width": 339,
+			"height": 536,
+			"categories": ["redpixel"],
+			"aliases": ["protracted", "pro"]
+		},
 		"friendship": {
 			"name": "friendship.png",
 			"x": 569,
