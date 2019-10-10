@@ -177,6 +177,15 @@
 			"categories": ["redpixel"],
 			"aliases": ["ironcorpse", "iron", "corpse", "heatherheyer"]
 		},
+		"lyud": {
+			"name": "lyud.png",
+			"x": -1188,
+			"y": 756,
+			"width": 130,
+			"height": 94,
+			"categories": ["redpixel"],
+			"aliases": ["lyudmila", "lyud"]
+		},
 		"protracted": {
 			"name": "protracted.png",
 			"x": -1087,
