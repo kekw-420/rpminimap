@@ -211,7 +211,16 @@
 			"width": 106,
 			"height": 66,
 			"categories": ["misc"],
-			"aliases": ["H", "poop", "h", "miru"]
+			"aliases": ["H", "poop", "miru"]
+		},
+                "h": {
+			"name": "h.png",
+			"x": -928,
+			"y": -422,
+			"width": 28,
+			"height": 38,
+			"categories": ["misc"],
+			"aliases": ["h", "cursed"]
 		}
 	}
 }
