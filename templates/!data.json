@@ -11,7 +11,7 @@
                         "x": -1341,
                         "y": -897,
                         "width": 507,
-                        "height": 475,   
+                        "height": 513,   
                         "categories": ["pixeltraa"],
                         "aliases": ["traaCenter","stevonnie"] 
                 },
@@ -203,24 +203,6 @@
 			"height": 201,
 			"categories": ["kuk"],
 			"aliases": ["friendship", "mlp", "ponies", "beach"]
-		},
-		"H": {
-			"name": "H.png",
-			"x": -1125,
-			"y": -248,
-			"width": 106,
-			"height": 66,
-			"categories": ["misc"],
-			"aliases": ["H", "poop", "miru"]
-		},
-                "h": {
-			"name": "h.png",
-			"x": -928,
-			"y": -422,
-			"width": 28,
-			"height": 38,
-			"categories": ["misc"],
-			"aliases": ["h", "cursed"]
 		}
 	}
 }
