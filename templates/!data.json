@@ -15,6 +15,15 @@
                         "categories": ["pixeltraa"],
                         "aliases": ["traaCenter","stevonnie"] 
                 },
+                "ab_vapu": {
+                        "name": "ab_vapu.png",
+                        "x": -1465,
+                        "y": -553,
+                        "width": 646,
+                        "height": 283,   
+                        "categories": ["misc"],
+                        "aliases": ["vapu","grano","vapu grano","boxgirl"] 
+                },
 		"redmenace": {
 			"name": "redmenace.png",
 			"x": -3250,
