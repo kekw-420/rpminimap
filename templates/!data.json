@@ -126,9 +126,9 @@
 		"traaMainBase": {
 			"name": "traaMainBase.png",
 			"x": 1207,
-			"y": 639,
+			"y": 320,
 			"width": 1489,
-			"height": 491,
+			"height": 810,
 			"categories": ["pixeltraa"],
 			"aliases": ["mainBase", "main", "traa"]
 		},
