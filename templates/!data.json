@@ -230,6 +230,7 @@
 			"height": 201,
 			"categories": ["kuk"],
 			"aliases": ["friendship", "mlp", "ponies", "beach"]
+			},
 		"ccp": {
 			"name": "ccp.png",
 			"x": -2401,
@@ -238,6 +239,7 @@
 			"height": 49,
 			"categories": ["redpixel"],
 			"aliases": ["ccp"]
+			},
 		}
 	}
 }
