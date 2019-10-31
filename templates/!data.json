@@ -231,6 +231,15 @@
 			"categories": ["kuk"],
 			"aliases": ["friendship", "mlp", "ponies", "beach"]
 			},
+			"apetown": {
+			"name": "apetown.png",
+			"x": -1643,
+			"y": -741,
+			"width": 223,
+			"height": 150,
+			"categories": ["other"],
+			"aliases": ["jimi", "jimmies", "shitposting", "dove"]
+			},
 		"ccp": {
 			"name": "ccp.png",
 			"x": -2401,
