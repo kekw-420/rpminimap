@@ -248,6 +248,15 @@
 			"height": 49,
 			"categories": ["redpixel"],
 			"aliases": ["ccp"]
+		},
+		"H": {
+			"name": "H.png",
+			"x": -1125,
+			"y": -248,
+			"width": 106,
+			"height": 66,
+			"categories": ["misc"],
+			"aliases": ["H", "poop", "h", "miru"]
 		}
 	}
 }
