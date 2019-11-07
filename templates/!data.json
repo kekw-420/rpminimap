@@ -257,6 +257,15 @@
 			"height": 66,
 			"categories": ["misc"],
 			"aliases": ["H", "poop", "h", "miru"]
+		},
+		"centermisc": {
+			"name": "centermisc.png",
+			"x": -330,
+			"y": -188,
+			"width": 571,
+			"height": 534,
+			"categories": ["misc"],
+			"aliases": ["centermisc"]
 		}
 	}
 }
