@@ -63,9 +63,9 @@
 		"blackbase": {
 			"name": "blackbase.png",
 			"x": 4634,
-			"y": 3738,
+			"y": 3650,
 			"width": 1373,
-			"height": 637,
+			"height": 725,
 			"categories": ["redpixel"],
 			"aliases": ["black base", "bb"]
 		},
@@ -167,15 +167,6 @@
 			"height": 1173,
 			"categories": ["redpixel"],
 			"aliases": ["gp"]
-		},
-		"touhou": {
-			"name": "touhou.png",
-			"x": -834,
-			"y": -869,
-			"width": 412,
-			"height": 172,
-			"categories": ["misc"],
-			"aliases": ["touhou"]
 		},
 		"benis": {
 			"name": "benis.png",
