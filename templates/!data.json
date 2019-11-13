@@ -257,6 +257,15 @@
 			"height": 534,
 			"categories": ["misc"],
 			"aliases": ["centermisc"]
+		},
+		"antifabase": {
+			"name": "antifabase.png",
+			"x": -2489,
+			"y": 6146,
+			"width": 489,
+			"height": 404,
+			"categories": ["redpixel"],
+			"aliases": ["antifa"]
 		}
 	}
 }
