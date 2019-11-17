@@ -220,7 +220,16 @@
 			"width": 490,
 			"height": 201,
 			"categories": ["kuk"],
-			"aliases": ["friendship", "mlp", "ponies", "beach"]
+			"aliases": ["friendship","beach"]
+			},
+		"mlp": {
+			"name": "mlp.png",
+			"x": -963,
+			"y": 571,
+			"width": 783,
+			"height": 717,
+			"categories": ["kuk"],
+			"aliases": ["mlp", "ponies", "pony", "my little pony"]
 			},
 		"apetown": {
 			"name": "apetown.png",
