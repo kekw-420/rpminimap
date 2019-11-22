@@ -224,10 +224,10 @@
 			},
 		"mlp": {
 			"name": "mlp.png",
-			"x": -963,
+			"x": -964,
 			"y": 571,
-			"width": 783,
-			"height": 717,
+			"width": 784,
+			"height": 718,
 			"categories": ["kuk"],
 			"aliases": ["mlp", "ponies", "pony", "my little pony"]
 			},
