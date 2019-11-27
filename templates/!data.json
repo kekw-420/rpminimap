@@ -78,15 +78,6 @@
 			"categories": ["redpixel"],
 			"aliases": ["red base"]
 		},
-		"transDiamond": {
-			"name": "transDiamond.png",
-			"x": -107,
-			"y": -107,
-			"width": 215,
-			"height": 215,
-			"categories": ["pixeltraa"],
-			"aliases": ["transDiamond", "diamond"]
-		},
 		"216": {
 			"name": "216.png",
 			"x": 270,
@@ -108,11 +99,11 @@
 		"pixelgrad": {
 			"name": "pixelgrad.png",
 			"x": -900,
-			"y": -1034,
-			"width": 1383,
-			"height": 1155,
+			"y": -1122,
+			"width": 1410,
+			"height": 1243,
 			"categories": ["redpixel"],
-			"aliases": ["pixelgrad", "center"]
+			"aliases": ["pixelgrad"]
 		},
 		"kuk": {
 			"name": "kuk.png",
@@ -186,8 +177,8 @@
 			"categories": ["redpixel"],
 			"aliases": ["rm_america", "america"]
 		},
-		"ironcorpse": {
-			"name": "ironcorpse.png",
+		"heatherheyer": {
+			"name": "heatherheyer.png",
 			"x": -1558,
 			"y": 1235,
 			"width": 79,
