@@ -177,23 +177,14 @@
 			"categories": ["redpixel"],
 			"aliases": ["rm_america", "america"]
 		},
-		"heatherheyer": {
-			"name": "heatherheyer.png",
-			"x": -1558,
-			"y": 1235,
-			"width": 79,
-			"height": 97,
-			"categories": ["redpixel"],
-			"aliases": ["ironcorpse", "iron", "corpse", "heatherheyer"]
-		},
-		"lyud": {
-			"name": "lyud.png",
-			"x": -1188,
+		"ironcorpse": {
+			"name": "ironcorpse.png",
+			"x": -1801,
 			"y": 756,
-			"width": 130,
-			"height": 94,
+			"width": 743,
+			"height": 578,
 			"categories": ["redpixel"],
-			"aliases": ["lyudmila", "lyud"]
+			"aliases": ["ironcorpse", "iron", "corpse", "heatherheyer","heather","lyud","arditi"]
 		},
 		"protracted": {
 			"name": "protracted.png",
