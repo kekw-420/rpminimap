@@ -231,6 +231,15 @@
 			"categories": ["redpixel"],
 			"aliases": ["ccp"]
 		},
+			"ddr": {
+			"name": "ccp.png",
+			"x": 5618,
+			"y": -73,
+			"width": 52,
+			"height": 46,
+			"categories": ["redpixel"],
+			"aliases": ["ddr"]
+		},
 		"H": {
 			"name": "H.png",
 			"x": -1125,
