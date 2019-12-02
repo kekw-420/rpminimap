@@ -251,10 +251,10 @@
 		},
 		"centermisc": {
 			"name": "centermisc.png",
-			"x": -330,
-			"y": -188,
-			"width": 571,
-			"height": 534,
+			"x": -497,
+			"y": -276,
+			"width": 738,
+			"height": 622,
 			"categories": ["misc"],
 			"aliases": ["centermisc"]
 		},
