@@ -251,9 +251,9 @@
 		},
 		"centermisc": {
 			"name": "centermisc.png",
-			"x": -330,
+			"x": -497,
 			"y": -276,
-			"width": 571,
+			"width": 738,
 			"height": 622,
 			"categories": ["misc"],
 			"aliases": ["centermisc"]
