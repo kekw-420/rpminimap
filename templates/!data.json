@@ -36,9 +36,9 @@
 		"prideFlags": {
 			"name": "prideFlags.png",
 			"x": 1343,
-			"y": -90,
-			"width": 324,
-			"height": 129,
+			"y": -91,
+			"width": 325,
+			"height": 130,
 			"categories": ["pixeltraa"],
 			"aliases": ["pride", "prideflags"]
 		},
