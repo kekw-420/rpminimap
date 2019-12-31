@@ -24,15 +24,15 @@
 			"categories": ["pixeltraa"],
 			"aliases": ["outpost"]
 		},
-        "traaCenter": {
+    "traaCenter": {
             "name": "traaCenter.png",
             "x": -1341,
             "y": -897,
             "width": 507,
-            "height": 513,   
+            "height": 513,
             "categories": ["pixeltraa"],
-			"aliases": ["traaCenter","stevonnie","tiresias"] 
-        },
+			"aliases": ["traaCenter","stevonnie","tiresias"]
+    },
 		"prideFlags": {
 			"name": "prideFlags.png",
 			"x": 1343,
@@ -42,7 +42,7 @@
 			"categories": ["pixeltraa"],
 			"aliases": ["pride", "prideflags"]
 		},
-        "sevenPointed": {
+    "sevenPointed": {
 			"name": "sevenPointed.png",
 			"x": -8589,
 			"y": 11817,
@@ -149,7 +149,7 @@
 			"height": 200,
 			"categories": ["redpixel"],
 			"aliases": ["fidel","che","trump","bolsonaro"]
-			},
+		},
 		"benis": {
 			"name": "benis.png",
 			"x": -1295,
@@ -227,27 +227,27 @@
             "x": -1465,
             "y": -553,
             "width": 646,
-            "height": 283,   
+            "height": 283,
             "categories": ["misc"],
-            "aliases": ["vapu","grano","vapu grano","boxgirl"] 
-        },
-        "ab_angler": {
+            "aliases": ["vapu","grano","vapu grano","boxgirl"]
+    },
+    "ab_angler": {
             "name": "ab_angler.png",
             "x": -791,
             "y": 127,
             "width": 771,
-            "height": 218,   
+            "height": 218,
             "categories": ["misc"],
-            "aliases": ["anglerfish","horseman"] 
-        },
-        "ab_wyvern": {
+            "aliases": ["anglerfish","horseman"]
+    },
+    "ab_wyvern": {
             "name": "ab_wyvern.png",
             "x": 770,
             "y": -411,
             "width": 172,
-            "height": 181,   
+            "height": 181,
             "categories": ["misc"],
-            "aliases": ["wyvern"] 
+            "aliases": ["wyvern"]
 		},
 		"216": {
 			"name": "216.png",
@@ -275,7 +275,7 @@
 			"height": 151,
 			"categories": ["misc"],
 			"aliases": ["jimi", "jimmies", "shitposting", "dove"]
-			},
+		},
 		"H": {
 			"name": "H.png",
 			"x": -1125,
