@@ -284,6 +284,15 @@
 			"height": 66,
 			"categories": ["misc"],
 			"aliases": ["H", "poop", "h", "miru"]
+		},
+		"RosaChallenge": {
+			"name": "RosaChallenge.png",
+			"x": -1495,
+			"y": -239,
+			"width": 110,
+			"height": 227,
+			"categories": ["misc"],
+			"aliases": ["RosaChallenge", "Rosa"]
 		}
 	}
 }
