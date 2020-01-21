@@ -89,9 +89,9 @@
 		},
 		"rainbowbase": {
 			"name": "rainbowbase.png",
-			"x": 2519,
+			"x": 2386,
 			"y": -3788,
-			"width": 519,
+			"width": 552,
 			"height": 434,
 			"categories": ["redpixel"],
 			"aliases": ["rainbow", "rainbow base", "rb"]
