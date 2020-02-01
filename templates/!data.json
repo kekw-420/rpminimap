@@ -107,10 +107,10 @@
 		},
 		"ironcorpse": {
 			"name": "ironcorpse.png",
-			"x": -1801,
-			"y": 756,
-			"width": 743,
-			"height": 613,
+			"x": -1986,
+			"y": 665,
+			"width": 928,
+			"height": 768,
 			"categories": ["redpixel"],
 			"aliases": ["ironcorpse", "iron", "corpse", "heatherheyer","heather","lyud","arditi"]
 		},
