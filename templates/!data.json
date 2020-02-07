@@ -7,13 +7,13 @@
 	],
 	"Templates": {
 		"traaMainBase": {
-			"name": "traaMainBase.png",
+			"name": "mb.png",
 			"x": 1207,
 			"y": 320,
 			"width": 1715,
 			"height": 810,
 			"categories": ["pixeltraa"],
-			"aliases": ["mainBase", "main", "traa"]
+			"aliases": ["mainBase", "main", "traa","mb"]
 		},
 		"outpost": {
 			"name": "outpost.png",
@@ -22,19 +22,19 @@
 			"width": 4643,
 			"height": 1800,
 			"categories": ["pixeltraa"],
-			"aliases": ["outpost"]
+			"aliases": ["outpost","op"]
 		},
-    "traaCenter": {
-            "name": "traaCenter.png",
+		"traaCenter": {
+            "name": "cb.png",
             "x": -1341,
             "y": -897,
             "width": 507,
             "height": 513,
             "categories": ["pixeltraa"],
-			"aliases": ["traaCenter","stevonnie","tiresias"]
-    },
+			"aliases": ["traaCenter","stevonnie","tiresias","cb"]
+		},
 		"prideFlags": {
-			"name": "prideFlags.png",
+			"name": "misc_pride.png",
 			"x": 1343,
 			"y": -91,
 			"width": 325,
@@ -42,14 +42,41 @@
 			"categories": ["pixeltraa"],
 			"aliases": ["pride", "prideflags"]
 		},
-    "sevenPointed": {
-			"name": "sevenPointed.png",
+		"sevenPointed": {
+			"name": "misc_seven.png",
 			"x": -8589,
 			"y": 11817,
 			"width": 77,
 			"height": 77,
 			"categories": ["pixeltraa"],
 			"aliases": ["sevenpointed"]
+		},
+		"butterfly2": {
+			"name": "misc_butterfly2.png",
+			"x": -7870,
+			"y": 7460,
+			"width": 40,
+			"height": 37,
+			"categories": ["pixeltraa"],
+			"aliases": ["cupha", "prosope"]
+		},
+		"butterfly3": {
+			"name": "misc_butterfly3.png",
+			"x": -4087,
+			"y": 7646,
+			"width": 40,
+			"height": 32,
+			"categories": ["pixeltraa"],
+			"aliases": ["lirentis", "reducta"]
+		},
+		"butterfly4": {
+			"name": "misc_butterfly4.png",
+			"x": 6859,
+			"y": 10372,
+			"width": 42,
+			"height": 39,
+			"categories": ["pixeltraa"],
+			"aliases": ["polyoratus", "icarus"]
 		},
 		"pixelgrad": {
 			"name": "pixelgrad.png",
@@ -177,14 +204,14 @@
 			"categories": ["redpixel"],
 			"aliases": ["ddr"]
 		},
-		"kuk": {
-			"name": "kuk.png",
+		"em": {
+			"name": "em.png",
 			"x": -3687,
 			"y": 2746,
 			"width": 1576,
 			"height": 1058,
 			"categories": ["kuk"],
-			"aliases": ["kukistan"]
+			"aliases": ["kukistan","eldritchmenace"]
 		},
 		"mlp": {
 			"name": "mlp.png",
@@ -204,14 +231,14 @@
 			"categories": ["kuk"],
 			"aliases": ["friendship","beach"]
 		},
-		"cen_full": {
-			"name": "cen_full.png",
+		"center": {
+			"name": "cen.png",
 			"x": -497,
 			"y": -314,
 			"width": 1049,
 			"height": 669,
 			"categories": ["misc"],
-			"aliases": ["centermisc","cen_full","center"]
+			"aliases": ["centermisc","cen_full"]
 		},
 		"centerDiamond": {
 			"name": "centerDiamond.png",
@@ -231,7 +258,7 @@
             "categories": ["misc"],
             "aliases": ["vapu","grano","vapu grano","boxgirl"]
     },
-    "ab_angler": {
+		"ab_angler": {
             "name": "ab_angler.png",
             "x": -791,
             "y": 127,
@@ -240,7 +267,7 @@
             "categories": ["misc"],
             "aliases": ["anglerfish","horseman"]
     },
-    "ab_wyvern": {
+		"ab_wyvern": {
             "name": "ab_wyvern.png",
             "x": 770,
             "y": -411,
