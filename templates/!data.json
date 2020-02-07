@@ -24,7 +24,7 @@
 			"categories": ["pixeltraa"],
 			"aliases": ["outpost","op"]
 		},
-		"traaCenter": {
+		"cb": {
             "name": "cb.png",
             "x": -1341,
             "y": -897,
