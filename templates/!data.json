@@ -6,7 +6,7 @@
 		["Misc", "misc"]
 	],
 	"Templates": {
-		"traaMainBase": {
+		"mb": {
 			"name": "mb.png",
 			"x": 1207,
 			"y": 320,
@@ -33,7 +33,7 @@
             "categories": ["pixeltraa"],
 			"aliases": ["traaCenter","stevonnie","tiresias","cb"]
 		},
-		"prideFlags": {
+		"misc_pride": {
 			"name": "misc_pride.png",
 			"x": 1343,
 			"y": -91,
@@ -42,7 +42,7 @@
 			"categories": ["pixeltraa"],
 			"aliases": ["pride", "prideflags"]
 		},
-		"sevenPointed": {
+		"misc_seven": {
 			"name": "misc_seven.png",
 			"x": -8589,
 			"y": 11817,
@@ -51,7 +51,7 @@
 			"categories": ["pixeltraa"],
 			"aliases": ["sevenpointed"]
 		},
-		"butterfly2": {
+		"misc_butterfly2": {
 			"name": "misc_butterfly2.png",
 			"x": -7870,
 			"y": 7460,
@@ -60,7 +60,7 @@
 			"categories": ["pixeltraa"],
 			"aliases": ["cupha", "prosope"]
 		},
-		"butterfly3": {
+		"misc_butterfly3": {
 			"name": "misc_butterfly3.png",
 			"x": -4087,
 			"y": 7646,
@@ -69,7 +69,7 @@
 			"categories": ["pixeltraa"],
 			"aliases": ["lirentis", "reducta"]
 		},
-		"butterfly4": {
+		"misc_butterfly4": {
 			"name": "misc_butterfly4.png",
 			"x": 6859,
 			"y": 10372,
@@ -195,7 +195,7 @@
 			"categories": ["redpixel"],
 			"aliases": ["ccp"]
 		},
-		"ddr": {
+		"dd": {
 			"name": "dd.png",
 			"x": 5618,
 			"y": -73,
