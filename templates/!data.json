@@ -231,7 +231,7 @@
 			"categories": ["kuk"],
 			"aliases": ["friendship","beach"]
 		},
-		"center": {
+		"cen": {
 			"name": "cen.png",
 			"x": -497,
 			"y": -314,
