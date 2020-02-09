@@ -78,8 +78,8 @@
 			"categories": ["pixeltraa"],
 			"aliases": ["polyoratus", "icarus"]
 		},
-		"pixelgrad": {
-			"name": "pixelgrad.png",
+		"pr": {
+			"name": "pr.png",
 			"x": -900,
 			"y": -1122,
 			"width": 1410,
@@ -87,8 +87,8 @@
 			"categories": ["redpixel"],
 			"aliases": ["pixelgrad"]
 		},
-		"redmenace": {
-			"name": "redmenace.png",
+		"rm": {
+			"name": "rm.png",
 			"x": -3250,
 			"y": 2748,
 			"width": 2340,
@@ -96,14 +96,14 @@
 			"categories": ["redpixel"],
 			"aliases": ["redmenace", "red menace", "bixelgrad"]
 		},
-		"blackbase": {
-			"name": "blackbase.png",
+		"bb": {
+			"name": "bb.png",
 			"x": 4634,
 			"y": 3650,
 			"width": 1373,
 			"height": 725,
 			"categories": ["redpixel"],
-			"aliases": ["black base", "bb"]
+			"aliases": ["blackbase", "bb"]
 		},
 		"redbase": {
 			"name": "redbase.png",
@@ -114,8 +114,8 @@
 			"categories": ["redpixel"],
 			"aliases": ["red base"]
 		},
-		"rainbowbase": {
-			"name": "rainbowbase.png",
+		"rb": {
+			"name": "rb.png",
 			"x": 2386,
 			"y": -3788,
 			"width": 652,
@@ -123,17 +123,17 @@
 			"categories": ["redpixel"],
 			"aliases": ["rainbow", "rainbow base", "rb"]
 		},
-		"greaterpixelgrad": {
-			"name": "greaterpixelgrad.png",
+		"gp": {
+			"name": "gp.png",
 			"x": 7365,
 			"y": -5061,
 			"width": 1287,
 			"height": 1173,
 			"categories": ["redpixel"],
-			"aliases": ["gp"]
+			"aliases": ["gp","greaterpixelgrad"]
 		},
-		"ironcorpse": {
-			"name": "ironcorpse.png",
+		"ic": {
+			"name": "ic.png",
 			"x": -1986,
 			"y": 665,
 			"width": 928,
@@ -150,32 +150,32 @@
 			"categories": ["redpixel"],
 			"aliases": ["rm_america", "america"]
 		},
-		"protracted": {
-			"name": "protracted.png",
+		"pro": {
+			"name": "pro.png",
 			"x": -1244,
 			"y": -114,
 			"width": 475,
 			"height": 618,
 			"categories": ["redpixel"],
-			"aliases": ["protracted", "pro"]
+			"aliases": ["protracted", "pro","pokemon"]
 		},
-		"antifabase": {
-			"name": "antifabase.png",
+		"afa": {
+			"name": "afa.png",
 			"x": -2490,
 			"y": 6145,
 			"width": 490,
 			"height": 406,
 			"categories": ["redpixel"],
-			"aliases": ["antifa"]
+			"aliases": ["antifa","antifabase"]
 		},
-		"fidel-che": {
-			"name": "fidel-che.png",
+		"misc_fidelche": {
+			"name": "misch_fidelche.png",
 			"x": 3128,
 			"y": 3350,
 			"width": 144,
 			"height": 200,
 			"categories": ["redpixel"],
-			"aliases": ["fidel","che","trump","bolsonaro"]
+			"aliases": ["fidel","che","trump","bolsonaro","fidel-che"]
 		},
 		"benis": {
 			"name": "benis.png",
@@ -195,8 +195,8 @@
 			"categories": ["redpixel"],
 			"aliases": ["ccp"]
 		},
-		"dd": {
-			"name": "dd.png",
+		"ddr": {
+			"name": "ddr.png",
 			"x": 5618,
 			"y": -73,
 			"width": 52,
@@ -240,8 +240,8 @@
 			"categories": ["misc"],
 			"aliases": ["centermisc","cen_full"]
 		},
-		"centerDiamond": {
-			"name": "centerDiamond.png",
+		"cen_diamond": {
+			"name": "cen_diamond.png",
 			"x": -109,
 			"y": -107,
 			"width": 219,
@@ -276,8 +276,8 @@
             "categories": ["misc"],
             "aliases": ["wyvern"]
 		},
-		"216": {
-			"name": "216.png",
+		"misc_216": {
+			"name": "misc_216.png",
 			"x": 270,
 			"y": 5721,
 			"width": 400,
@@ -285,8 +285,8 @@
 			"categories": ["misc"],
 			"aliases": ["216"]
 		},
-		"vedic": {
-			"name": "vedic.png",
+		"misc_vedic": {
+			"name": "misc_vedic.png",
 			"x": 695,
 			"y": 5900,
 			"width": 121,
@@ -294,14 +294,14 @@
 			"categories": ["misc"],
 			"aliases": ["vedic", "vedicsquare"]
 		},
-		"apetown": {
-			"name": "apetown.png",
+		"misc_apetown": {
+			"name": "misc_apetown.png",
 			"x": -1644,
 			"y": -742,
 			"width": 199,
 			"height": 151,
 			"categories": ["misc"],
-			"aliases": ["jimi", "jimmies", "shitposting", "dove"]
+			"aliases": ["jimi", "jimmies", "shitposting", "dove","apetown"]
 		},
 		"H": {
 			"name": "H.png",
