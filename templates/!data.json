@@ -15,8 +15,8 @@
 			"categories": ["pixeltraa"],
 			"aliases": ["mainBase", "main", "traa","mb"]
 		},
-		"outpost": {
-			"name": "outpost.png",
+		"op": {
+			"name": "op.png",
 			"x": 136175,
 			"y": -23439,
 			"width": 4643,
