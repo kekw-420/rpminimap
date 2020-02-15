@@ -19,14 +19,8 @@ When the minimap is installed be sure to check the template categories in settin
 #### Pixelgrad
 [![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/pr.png)](https://pixelcanvas.io/@-462,-571)
 
-#### Greater Pixelgrad
-[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/gp.png)](https://pixelcanvas.io/@7365,-5061)
-
 #### Red Menace
 [![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/rm.png)](https://pixelcanvas.io/@-1994,3810)
-
-#### Red Menace: America
-[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/rm_america.png)](https://pixelcanvas.io/@-10300,4800)
 
 #### Black Base
 [![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/bb.png)](https://pixelcanvas.io/@5339,4057)
@@ -42,6 +36,12 @@ When the minimap is installed be sure to check the template categories in settin
 
 #### Protracted
 [![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/pro.png)](https://pixelcanvas.io/@-1244,-114)
+
+#### Greater Pixelgrad
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/gp.png)](https://pixelcanvas.io/@7365,-5061)
+
+#### Red Menace: America
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/rm_america.png)](https://pixelcanvas.io/@-10300,4800)
 
 #### Antifa Base
 [![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/afa.png)](https://pixelcanvas.io/@-2490,6145)
