@@ -6,6 +6,12 @@ python:
 install:
   pip install -r requirements.txt
 
+# if a test fails, send a notification to discord
+after_failure:
+  wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
+  chmod +x send.sh
+  ./send.sh failure $WEBHOOK_URL
+
 # run script
 script:
   pytest
