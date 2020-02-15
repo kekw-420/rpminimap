@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/traa-pixelcanvas/Minimap.svg?branch=master)](https://travis-ci.org/traa-pixelcanvas/Minimap)
 # Canvas Minimap
 ## Step 1: Install Tampermonkey (or Greasemonkey if Firefox)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/firefox.png) [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/)
