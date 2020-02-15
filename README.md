@@ -16,18 +16,47 @@ When the minimap is installed be sure to check the template categories in settin
 
 ## Category: Redpixel
 
-#### pixelgrad
-[![](https://raw.githubusercontent.com/plutorising/Minimap/master/templates/pixelgrad.png)](https://pixelcanvas.io/@-462,-571)
+#### Pixelgrad
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/pr.png)](https://pixelcanvas.io/@-462,-571)
 
-#### redmenace
-[![](https://raw.githubusercontent.com/plutorising/Minimap/master/templates/redmenace.png)](https://pixelcanvas.io/@-1994,3810)
+#### Greater Pixelgrad
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/gp.png)](https://pixelcanvas.io/@7365,-5061)
+
+#### Red Menace
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/rm.png)](https://pixelcanvas.io/@-1994,3810)
+
+#### Red Menace: America
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/rm_america.png)](https://pixelcanvas.io/@-10300,4800)
 
 #### Black Base
-[![](https://raw.githubusercontent.com/plutorising/Minimap/master/templates/blackbase.png)](https://pixelcanvas.io/@5339,4057)
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/bb.png)](https://pixelcanvas.io/@5339,4057)
 
-#### rainbow base
-[![](https://raw.githubusercontent.com/plutorising/Minimap/master/templates/rainbowbase.png)](https://pixelcanvas.io/@2778,-3533)
+#### Rainbow Base
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/rb.png)](https://pixelcanvas.io/@2778,-3533)
 
+#### Red Base
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/redbase.png)](https://pixelcanvas.io/@7290,1739)
+
+#### Iron Corpse
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/ic.png)](https://pixelcanvas.io/@-1986,665)
+
+#### Protracted
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/pro.png)](https://pixelcanvas.io/@-1244,-114)
+
+#### Antifa Base
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/afa.png)](https://pixelcanvas.io/@-2490,6145)
+
+#### Fidel and Che
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/misc_fidelche.png)](https://pixelcanvas.io/@3128,3350)
+
+#### AFA Flag
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/benis.png)](https://pixelcanvas.io/@-1295,-1019)
+
+#### CCP
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/ccp.png)](https://pixelcanvas.io/@-2401,1641)
+
+#### DDR
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/ddr.png)](https://pixelcanvas.io/@5618,-73)
 
 
 ## Category: PixelTraa
