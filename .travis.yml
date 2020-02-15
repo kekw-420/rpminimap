@@ -2,9 +2,9 @@ language: python
 python:
   "3.6"
 
-# install dependencies if they become needed at any point
-# install:
-#   pip install -r requirements.txt
+# install dependencies
+install:
+  pip install -r requirements.txt
 
 # run script
 script:
