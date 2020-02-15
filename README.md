@@ -32,17 +32,29 @@ When the minimap is installed be sure to check the template categories in settin
 
 ## Category: PixelTraa
 
-#### Traa Main Base
+#### Main Base
 [![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/mb.png)](https://pixelcanvas.io/@1450,959)
 
 #### Outpost
 [![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/op.png)](https://pixelcanvas.io/@139290,-22490)
 
-### Traa Center
+### Center Base
 [![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/cb.png)](https://pixelcanvas.io/@-1000,-651)
 
 ### Pride Flags
 [![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/misc_pride.png)](https://pixelcanvas.io/@1542,-40)
+
+### Seven Pointed
+[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/misc_seven.png)](https://pixelcanvas.io/@-8589,11817)
+
+### Butterfly 2
+[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/misc_butterfly2.png)](https://pixelcanvas.io/@-7870,7460)
+
+### Butterfly 3
+[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/misc_butterfly3.png)](https://pixelcanvas.io/@-4087,7646)
+
+### Butterfly 4
+[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/misc_butterfly4.png)](https://pixelcanvas.io/@6859,10372)
 
 
 
