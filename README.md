@@ -16,33 +16,74 @@ When the minimap is installed be sure to check the template categories in settin
 
 ## Category: Redpixel
 
-#### pixelgrad
-[![](https://raw.githubusercontent.com/plutorising/Minimap/master/templates/pixelgrad.png)](https://pixelcanvas.io/@-462,-571)
+#### Pixelgrad
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/pr.png)](https://pixelcanvas.io/@-462,-571)
 
-#### redmenace
-[![](https://raw.githubusercontent.com/plutorising/Minimap/master/templates/redmenace.png)](https://pixelcanvas.io/@-1994,3810)
+#### Red Menace
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/rm.png)](https://pixelcanvas.io/@-1994,3810)
 
 #### Black Base
-[![](https://raw.githubusercontent.com/plutorising/Minimap/master/templates/blackbase.png)](https://pixelcanvas.io/@5339,4057)
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/bb.png)](https://pixelcanvas.io/@5339,4057)
 
-#### rainbow base
-[![](https://raw.githubusercontent.com/plutorising/Minimap/master/templates/rainbowbase.png)](https://pixelcanvas.io/@2778,-3533)
+#### Rainbow Base
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/rb.png)](https://pixelcanvas.io/@2778,-3533)
 
+#### Red Base
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/redbase.png)](https://pixelcanvas.io/@7290,1739)
+
+#### Iron Corpse
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/ic.png)](https://pixelcanvas.io/@-1986,665)
+
+#### Protracted
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/pro.png)](https://pixelcanvas.io/@-1244,-114)
+
+#### Greater Pixelgrad
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/gp.png)](https://pixelcanvas.io/@7365,-5061)
+
+#### Red Menace: America
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/rm_america.png)](https://pixelcanvas.io/@-10300,4800)
+
+#### Antifa Base
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/afa.png)](https://pixelcanvas.io/@-2490,6145)
+
+#### Fidel and Che
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/misc_fidelche.png)](https://pixelcanvas.io/@3128,3350)
+
+#### AFA Flag
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/benis.png)](https://pixelcanvas.io/@-1295,-1019)
+
+#### CCP
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/ccp.png)](https://pixelcanvas.io/@-2401,1641)
+
+#### DDR
+[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/ddr.png)](https://pixelcanvas.io/@5618,-73)
 
 
 ## Category: PixelTraa
 
-#### Traa Main Base
+#### Main Base
 [![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/mb.png)](https://pixelcanvas.io/@1450,959)
 
 #### Outpost
-[![](https://github.com/plutorising/Minimap/blob/master/templates/op.png)](https://pixelcanvas.io/@139290,-22490)
+[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/op.png)](https://pixelcanvas.io/@139290,-22490)
 
-### Traa Center
+### Center Base
 [![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/cb.png)](https://pixelcanvas.io/@-1000,-651)
 
 ### Pride Flags
-[![](https://github.com/plutorising/Minimap/blob/master/templates/prideFlags.png)](https://pixelcanvas.io/@1542,-40)
+[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/misc_pride.png)](https://pixelcanvas.io/@1542,-40)
+
+### Seven Pointed
+[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/misc_seven.png)](https://pixelcanvas.io/@-8589,11817)
+
+### Butterfly 2
+[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/misc_butterfly2.png)](https://pixelcanvas.io/@-7870,7460)
+
+### Butterfly 3
+[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/misc_butterfly3.png)](https://pixelcanvas.io/@-4087,7646)
+
+### Butterfly 4
+[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/misc_butterfly4.png)](https://pixelcanvas.io/@6859,10372)
 
 
 
