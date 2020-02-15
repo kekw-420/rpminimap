@@ -36,13 +36,13 @@ When the minimap is installed be sure to check the template categories in settin
 [![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/mb.png)](https://pixelcanvas.io/@1450,959)
 
 #### Outpost
-[![](https://github.com/plutorising/Minimap/blob/master/templates/op.png)](https://pixelcanvas.io/@139290,-22490)
+[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/op.png)](https://pixelcanvas.io/@139290,-22490)
 
 ### Traa Center
 [![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/cb.png)](https://pixelcanvas.io/@-1000,-651)
 
 ### Pride Flags
-[![](https://github.com/plutorising/Minimap/blob/master/templates/prideFlags.png)](https://pixelcanvas.io/@1542,-40)
+[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/misc_pride.png)](https://pixelcanvas.io/@1542,-40)
 
 
 
