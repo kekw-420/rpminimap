@@ -33,23 +33,26 @@ When the minimap is installed be sure to check the template categories in settin
 ## Category: PixelTraa
 
 #### Traa Main Base
-[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/traaMainBase.png)](https://pixelcanvas.io/@1450,959)
+[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/mb.png)](https://pixelcanvas.io/@1450,959)
 
 #### Outpost
-[![](https://github.com/plutorising/Minimap/blob/master/templates/outpost.png)](https://pixelcanvas.io/@139290,-22490)
+[![](https://github.com/plutorising/Minimap/blob/master/templates/op.png)](https://pixelcanvas.io/@139290,-22490)
 
 ### Traa Center
-[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/traaCenter.png)](https://pixelcanvas.io/@-1000,-651)
+[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/cb.png)](https://pixelcanvas.io/@-1000,-651)
 
 ### Pride Flags
 [![](https://github.com/plutorising/Minimap/blob/master/templates/prideFlags.png)](https://pixelcanvas.io/@1542,-40)
 
 
 
-## Category: Kukistan
+## Category: Eldrich Menace
 
-### Kuk
-[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/kuk.png)](https://pixelcanvas.io/@-2575,3212)
+### Eldrich Menace
+[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/em.png)](https://pixelcanvas.io/@-2575,3212)
 
 ### Friendship
 [![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/friendship.png)](https://pixelcanvas.io/@759,454)
+
+### MLP
+[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/mlp.png)](https://pixelcanvas.io/@-759,800)
