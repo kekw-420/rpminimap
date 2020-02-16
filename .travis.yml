@@ -1,10 +1,9 @@
 language: python
-python:
-  "3.6"
+python: "3.6"
+os: linux
 
 # install dependencies
-install:
-  - pip install -r requirements.txt
+install: pip install -r requirements.txt
 
 # if a test fails, send a notification to discord
 after_failure:
@@ -13,5 +12,4 @@ after_failure:
   - ./send.sh failure $WEBHOOK_URL
 
 # run script
-script:
-  - pytest
+script: pytest
