@@ -98,3 +98,6 @@ When the minimap is installed be sure to check the template categories in settin
 
 ### MLP
 [![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/mlp.png)](https://pixelcanvas.io/@-759,800)
+
+## Category: Art Protection Division
+[![](https://github.com/traa-pixelcanvas/Minimap/blob/master/templates/cen.png)](https://pixelcanvas.io/@-502,-315)
