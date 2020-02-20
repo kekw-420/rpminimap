@@ -3,7 +3,9 @@
 		["RedPixel", "redpixel"],
 		["PixelTraa", "pixeltraa"],
 		["Kukistan", "kuk"],
+		["ArtProtectionDivision", "apd"],
 		["Misc", "misc"]
+		
 	],
 	"Templates": {
 		"mb": {
@@ -237,7 +239,7 @@
 			"y": -314,
 			"width": 1049,
 			"height": 669,
-			"categories": ["misc"],
+			"categories": ["apd"],
 			"aliases": ["centermisc","cen_full"]
 		},
 		"cen_diamond": {
