@@ -264,10 +264,10 @@
             "name": "ab_angler.png",
             "x": -791,
             "y": 127,
-            "width": 771,
-            "height": 218,
+            "width": 254,
+            "height": 187,
             "categories": ["misc"],
-            "aliases": ["anglerfish","horseman"]
+            "aliases": ["anglerfish","dory","abyss"]
     },
 		"ab_wyvern": {
             "name": "ab_wyvern.png",
@@ -277,6 +277,15 @@
             "height": 181,
             "categories": ["misc"],
             "aliases": ["wyvern"]
+		},
+		"ab_knight": {
+            "name": "ab_knight.png",
+            "x": -208,
+            "y": 204,
+            "width": 188,
+            "height": 142,
+            "categories": ["misc"],
+            "aliases": ["knight","horseman"]
 		},
 		"misc_216": {
 			"name": "misc_216.png",
