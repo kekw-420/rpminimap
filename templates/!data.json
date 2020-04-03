@@ -331,6 +331,14 @@
 			"height": 227,
 			"categories": ["misc"],
 			"aliases": ["RosaChallenge", "Rosa"]
+		"tempredline": {
+			"name": "tempredline.png",
+			"x": 325,
+			"y": 346,
+			"width": 173,
+			"height": 152,
+			"categories": ["apd"],
+			"aliases": ["redline"]
 		}
 	}
 }
