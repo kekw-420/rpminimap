@@ -46,10 +46,10 @@
 		},
 		"misc_seven": {
 			"name": "misc_seven.png",
-			"x": -8589,
-			"y": 11817,
-			"width": 77,
-			"height": 77,
+			"x": -8588,
+			"y": 11818,
+			"width": 75,
+			"height": 75,
 			"categories": ["pixeltraa"],
 			"aliases": ["sevenpointed"]
 		},
