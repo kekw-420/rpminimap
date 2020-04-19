@@ -143,8 +143,8 @@
 			"categories": ["redpixel"],
 			"aliases": ["ironcorpse", "iron", "corpse", "heatherheyer","heather","lyud","arditi"]
 		},
-		"rm_america": {
-			"name": "rm_america.png",
+		"misc_america": {
+			"name": "misc_america.png",
 			"x": -10300,
 			"y": 4800,
 			"width": 506,
