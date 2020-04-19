@@ -8,15 +8,6 @@
 		
 	],
 	"Templates": {
-		"tttttt": {
-			"name": "test.png",
-			"x": 3000,
-			"y": 3000,
-			"width": 500,
-			"height": 500,
-			"categories": ["pixeltraa"],
-			"aliases": ["test", "george is doing some tests ignore this"]
-		},
 		"mb": {
 			"name": "mb.png",
 			"x": 1207,
