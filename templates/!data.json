@@ -227,9 +227,9 @@
 		"friendship": {
 			"name": "friendship.png",
 			"x": 569,
-			"y": 358,
+			"y": 346,
 			"width": 490,
-			"height": 201,
+			"height": 213,
 			"categories": ["kuk"],
 			"aliases": ["friendship","beach"]
 		},
