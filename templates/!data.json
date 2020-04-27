@@ -206,14 +206,14 @@
 			"categories": ["redpixel"],
 			"aliases": ["ddr"]
 		},
-		"unnamed-base_mainflag": {
-			"name": "unnamed-base_mainflag.png",
+		"lr_mf": {
+			"name": "lr_mf.png",
 			"x": -3734,
 			"y": -674,
 			"width": 406,
 			"height": 207,
 			"categories": ["redpixel"],
-			"aliases": ["unnamed-base_mainflag"]
+			"aliases": ["lr_mf"]
 		},
 		"em": {
 			"name": "em.png",
