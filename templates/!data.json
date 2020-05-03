@@ -215,6 +215,15 @@
 			"categories": ["redpixel"],
 			"aliases": ["lr_mf"]
 		},
+		"afa-flag": {
+			"name": "afa-flag.png",
+			"x": -1295,
+			"y": -1019,
+			"width": 212,
+			"height": 126,
+			"categories": ["redpixel"],
+			"aliases": ["afa-flag"]
+		},
 		"em": {
 			"name": "em.png",
 			"x": -3687,
