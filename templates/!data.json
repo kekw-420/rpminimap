@@ -179,15 +179,6 @@
 			"categories": ["redpixel"],
 			"aliases": ["fidel","che","trump","bolsonaro","fidel-che"]
 		},
-		"benis": {
-			"name": "benis.png",
-			"x": -1295,
-			"y": -1019,
-			"width": 212,
-			"height": 126,
-			"categories": ["redpixel"],
-			"aliases": ["finnish", "afa-flag"]
-		},
 		"ccp": {
 			"name": "ccp.png",
 			"x": -2401,
@@ -222,7 +213,7 @@
 			"width": 212,
 			"height": 126,
 			"categories": ["redpixel"],
-			"aliases": ["afa-flag"]
+			"aliases": ["afa-flag","benis"]
 		},
 		"em": {
 			"name": "em.png",
