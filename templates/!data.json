@@ -349,6 +349,15 @@
 			"height": 152,
 			"categories": ["apd"],
 			"aliases": ["redline"]
+		},
+		"pixelgo": {
+			"name": "pixelgo.png",
+			"x": 10449,
+			"y": -20111,
+			"width": 462,
+			"height": 291,
+			"categories": ["apd"],
+			"aliases": ["monastery"]
 		}
 	}
 }
