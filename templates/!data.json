@@ -244,9 +244,9 @@
 		},
 		"cen": {
 			"name": "cen.png",
-			"x": -502,
+			"x": -499,
 			"y": -315,
-			"width": 1078,
+			"width": 1076,
 			"height": 670,
 			"categories": ["apd"],
 			"aliases": ["centermisc","cen_full"]
