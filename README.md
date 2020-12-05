@@ -18,7 +18,7 @@ When the minimap is installed be sure to check the template categories in settin
 ## Category: Redpixel
 
 #### Pixelgrad
-[![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/pr.png)](https://pixelcanvas.io/@-462,-571)
+[![](https://raw.githubusercontent.com/RedPixel-canvas/rpminimap/master/templates/pr.png)](https://pixelcanvas.io/@-462,-571)
 
 #### Red Menace
 [![](https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/rm.png)](https://pixelcanvas.io/@-1994,3810)
