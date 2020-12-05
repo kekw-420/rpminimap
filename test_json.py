@@ -23,7 +23,7 @@ def content_check():
 
 # Checks that all the image paths given actually exist
 def image_check():
-    url = "https://raw.githubusercontent.com/traa-pixelcanvas/Minimap/master/templates/"
+    url = "https://raw.githubusercontent.com/RedPixel-canvas/rpminimap/master/templates/"
     data = None
     with open("templates/!data.json") as json_file:
         data = json.loads(json_file.read())
