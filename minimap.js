@@ -1,3 +1,24 @@
+// ==UserScript==
+// @name         Minimap
+// @namespace    RedPixel-canvas/rpminimap
+// @version      0.13
+// @description  Minimap for PixelCanvas
+// @author       Exel80#0080 & Terrienne#2453
+// @match        http://pixelcanvas.io/*
+// @match        https://pixelcanvas.io/*
+// @grant        GM_addStyle
+// @grant        GM_getResourceText
+// @require      https://use.fontawesome.com/releases/v5.0.10/js/all.js
+// @require      https://code.jquery.com/jquery-2.2.4.min.js
+// @require      https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js
+// @require      https://code.jquery.com/ui/1.12.1/jquery-ui.min.js
+// @resource     jQueryCss https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css
+// @copyright    2018 © Exel80#0080 & Terrienne#2453
+// @license      https://creativecommons.org/licenses/by-nc-nd/4.0/
+// @updateURL    https://raw.githubusercontent.com/RedPixel-canvas/rpminimap/master/minimap.pub.user.js
+// @downloadURL  https://raw.githubusercontent.com/RedPixel-canvas/rpminimap/master/minimap.pub.user.js
+// ==/UserScript==
+
 Number.prototype.between = function (_0x157a64, _0x34e888) {
     var _0x10cab4 = Math.min.apply(Math, [_0x157a64, _0x34e888]),
         _0x2baafa = Math.max.apply(Math, [_0x157a64, _0x34e888]);
