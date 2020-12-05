@@ -18,46 +18,46 @@ When the minimap is installed be sure to check the template categories in settin
 ## Category: Redpixel
 
 #### Pixelgrad
-[![](https://raw.githubusercontent.com/RedPixel-canvas/rpminimap/master/templates/pr.png)](https://pixelcanvas.io/@-462,-571)
+[![](https://github.com/RedPixel-canvas/rpminimap/blob/master/templates/pr.png)](https://pixelcanvas.io/@-462,-571)
 
 #### Red Menace
-[![](https://raw.githubusercontent.com/RedPixel-canvas/rpminimap/master/templates/rm.png)](https://pixelcanvas.io/@-1994,3810)
+[![](https://github.com/RedPixel-canvas/rpminimap/blob/master/templates/rm.png)](https://pixelcanvas.io/@-1994,3810)
 
 #### Black Base
-[![](https://raw.githubusercontent.com/RedPixel-canvas/rpminimap/master/templates/bb.png)](https://pixelcanvas.io/@5339,4057)
+[![](https://github.com/RedPixel-canvas/rpminimap/blob/master/templates/bb.png)](https://pixelcanvas.io/@5339,4057)
 
 #### Rainbow Base
-[![](https://raw.githubusercontent.com/RedPixel-canvas/rpminimap/master/templates/rb.png)](https://pixelcanvas.io/@2778,-3533)
+[![](https://github.com/RedPixel-canvas/rpminimap/blob/master/templates/rb.png)](https://pixelcanvas.io/@2778,-3533)
 
 #### Red Base
-[![](https://raw.githubusercontent.com/RedPixel-canvas/rpminimap/master/templates/redbase.png)](https://pixelcanvas.io/@7290,1739)
+[![](https://github.com/RedPixel-canvas/rpminimap/blob/master/templates/redbase.png)](https://pixelcanvas.io/@7290,1739)
 
 #### Iron Corpse
-[![](https://raw.githubusercontent.com/RedPixel-canvas/rpminimap/master/templates/ic.png)](https://pixelcanvas.io/@-1986,665)
+[![](https://github.com/RedPixel-canvas/rpminimap/blob/master/templates/ic.png)](https://pixelcanvas.io/@-1986,665)
 
 #### Protracted
-[![](https://raw.githubusercontent.com/RedPixel-canvas/rpminimap/master/templates/pro.png)](https://pixelcanvas.io/@-1244,-114)
+[![](https://github.com/RedPixel-canvas/rpminimap/blob/master/templates/pro.png)](https://pixelcanvas.io/@-1244,-114)
 
 #### Greater Pixelgrad
-[![](https://raw.githubusercontent.com/RedPixel-canvas/rpminimap/master/templates/gp.png)](https://pixelcanvas.io/@7365,-5061)
+[![](https://github.com/RedPixel-canvas/rpminimap/blob/master/templates/gp.png)](https://pixelcanvas.io/@7365,-5061)
 
 #### Red Menace: America
-[![](https://raw.githubusercontent.com/RedPixel-canvas/rpminimap/master/templates/rm_america.png)](https://pixelcanvas.io/@-10300,4800)
+[![](https://github.com/RedPixel-canvas/rpminimap/blob/master/templates/rm_america.png)](https://pixelcanvas.io/@-10300,4800)
 
 #### Antifa Base
-[![](https://raw.githubusercontent.com/RedPixel-canvas/rpminimap/master/templates/afa.png)](https://pixelcanvas.io/@-2490,6145)
+[![](https://github.com/RedPixel-canvas/rpminimap/blob/master/templates/afa.png)](https://pixelcanvas.io/@-2490,6145)
 
 #### Fidel and Che
-[![](https://raw.githubusercontent.com/RedPixel-canvas/rpminimap/master/templates/misc_fidelche.png)](https://pixelcanvas.io/@3128,3350)
+[![](https://github.com/RedPixel-canvas/rpminimap/blob/master/templates/misc_fidelche.png)](https://pixelcanvas.io/@3128,3350)
 
 #### AFA Flag
-[![](https://raw.githubusercontent.com/RedPixel-canvas/rpminimap/master/templates/benis.png)](https://pixelcanvas.io/@-1295,-1019)
+[![](https://github.com/RedPixel-canvas/rpminimap/blob/master/templates/benis.png)](https://pixelcanvas.io/@-1295,-1019)
 
 #### CCP
-[![](https://raw.githubusercontent.com/RedPixel-canvas/rpminimap/master/templates/ccp.png)](https://pixelcanvas.io/@-2401,1641)
+[![](https://github.com/RedPixel-canvas/rpminimap/blob/master/templates/ccp.png)](https://pixelcanvas.io/@-2401,1641)
 
 #### DDR
-[![](https://raw.githubusercontent.com/RedPixel-canvas/rpminimap/master/templates/ddr.png)](https://pixelcanvas.io/@5618,-73)
+[![](https://github.com/RedPixel-canvas/rpminimap/blob/master/templates/ddr.png)](https://pixelcanvas.io/@5618,-73)
 
 
 ## Category: PixelTraa
