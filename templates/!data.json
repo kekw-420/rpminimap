@@ -224,6 +224,24 @@
 			"categories": ["kuk"],
 			"aliases": ["kukistan","eldritchmenace"]
 		},
+		"mlp": {
+			"name": "mlp.png",
+			"x": -964,
+			"y": 571,
+			"width": 784,
+			"height": 718,
+			"categories": ["kuk"],
+			"aliases": ["mlp", "ponies", "pony", "my little pony"]
+		},
+		"friendship": {
+			"name": "friendship.png",
+			"x": 569,
+			"y": 346,
+			"width": 490,
+			"height": 213,
+			"categories": ["kuk"],
+			"aliases": ["friendship","beach"]
+		},
 		"cen": {
 			"name": "cen.png",
 			"x": -500,
