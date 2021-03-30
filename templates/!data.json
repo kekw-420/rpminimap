@@ -35,6 +35,15 @@
             "categories": ["pixeltraa"],
 			"aliases": ["traaCenter","stevonnie","tiresias","cb"]
 		},
+		"oasis": {
+            "name": "oasis.png",
+            "x": -582590,
+            "y": 366929,
+            "width": 1405,
+            "height": 694,
+            "categories": ["pixeltraa"],
+			"aliases": ["oasis"]
+		},
 		"misc_pride": {
 			"name": "misc_pride.png",
 			"x": 1343,
